@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Shmuel!"
+title:  "Welcome to shmueeeyy!"
 date:   2023-06-14 15:37:21 -0500
 categories: jekyll update
 ---
