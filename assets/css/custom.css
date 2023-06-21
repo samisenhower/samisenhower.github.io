@@ -172,3 +172,12 @@ background-color: #374f51;
 .user-details h1 {
 	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
 }
+
+.spacer {
+margin-bottom: 5px;
+}
+
+#about {
+width: 100%;
+max-width: 10000px;
+}
