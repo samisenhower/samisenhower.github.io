@@ -34,7 +34,7 @@
 
 
 #header-intro {
-  font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
+  font-family: 'TraditionellSans','Montserrat', sans-serif;
   z-index: 1;
   text-align: center;
   color:#FFF;
@@ -51,18 +51,21 @@ padding: 0;
 }
 
 #header-intro .site-title {
-	font-size: 50px;
+	font-size: 30px;
 	display: block;
 	line-height: 1;
 	color: #000;
-	font-family: 'TraditionellSans','Montserrat', sans-serif;
+	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
 }
 #header-intro .site-description {
-	font-size: 20px;
+	font-size: 12px;
 	display: block;
 	line-height: 1;
 	color: #000;
-	margin-top: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	letter-spacing: .2em;
+	font-family: 'TraditionellSans','Montserrat', sans-serif;
 }
 
 .header-icons {
@@ -111,13 +114,17 @@ padding: 0;
       font-size: 30px;
       line-height: 30px;
       }
-    }
+}
+
 .header-links .link {
-color:#000;
-border-style: solid;
-border-color: #000;
-border-width: 2px;
-padding: 10px 20px;
+	color:#000;
+	border-style: solid;
+	border-color: #000;
+	border-width: 2px;
+	padding: 10px 20px;
+	letter-spacing: .2em;
+	font-family: 'TraditionellSans','Montserrat', sans-serif;
+	font-size: 12px;
 }
 
 .header-links .link:hover {
@@ -126,5 +133,5 @@ background-color: #000;
 }
 
 .user-details h1 {
-	font-family: 'TraditionellSans','Montserrat', sans-serif;
+	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
 }
