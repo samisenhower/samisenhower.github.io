@@ -173,11 +173,18 @@ background-color: #374f51;
 	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
 }
 
+.spacera {
+margin-top: 100px;
+}
+
+.spacer1 img {
+width: 20px;
+}
+
 .spacer {
-margin-bottom: 5px;
+margin-top: 30px;
 }
 
 #about {
-width: 100%;
 max-width: 10000px;
-}
+} 
