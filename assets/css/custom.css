@@ -188,3 +188,15 @@ margin-top: 30px;
 #about {
 max-width: 10000px;
 } 
+
+
+#tagline .top{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 27px;
+	display: block;
+	line-height: 1;
+	color: #374f51;
+	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
+	xletter-spacing: -1px;
+}
