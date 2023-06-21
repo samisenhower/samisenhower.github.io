@@ -32,6 +32,16 @@
     src: url("/assets/fonts/TraditionellSans.ttf");
 }
 
+@font-face {
+    font-family: TraditionellSansBold;
+    src: url("/assets/fonts/TraditionellSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: BebasNeueProItalic;
+    src: url("/assets/fonts/BebasNeueProItalic.otf") format("opentype");
+}
+
 
 #header-intro {
   font-family: 'TraditionellSans','Montserrat', sans-serif;
@@ -51,26 +61,33 @@ padding: 0;
 }
 
 #header-intro .site-title {
-	font-size: 30px;
+	font-size: 25px;
 	display: block;
 	line-height: 1;
-	color: #000;
-	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
+	color: #374f51;
+	font-family: 'TraditionellSans','Montserrat', sans-serif;
+	letter-spacing: .1em;
 }
 #header-intro .site-description {
-	font-size: 12px;
+	font-size: 14px;
 	display: block;
 	line-height: 1;
-	color: #000;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	color: #ab9b8a;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	letter-spacing: .2em;
-	font-family: 'TraditionellSans','Montserrat', sans-serif;
+	font-family: 'BebasNeueProItalic','Montserrat', sans-serif;
 }
 
 #header-intro .top{
-margin-top: auto;
-margin-bottom: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 30px;
+	display: block;
+	line-height: 1;
+	color: #374f51;
+	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
+	xletter-spacing: -1px;
 }
 
 #header-intro .middle{
@@ -78,7 +95,10 @@ display: flex;
 flex-grow: 1;
 flex-direction: column;
 justify-content:center;
+
 }
+
+
 
 #header-intro .bottom{
 margin-top: auto;
@@ -105,10 +125,10 @@ margin-bottom: auto;
   }
 .header-icons .icon {
     text-align: center;
-    color: #000;
-    width: 20px;
+    color: #ab9b8a;
+    width: 0px;
     height: 20px;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
     margin: 5px;
     transition: all .5s;
@@ -126,27 +146,27 @@ margin-bottom: auto;
 
 @media only screen and (min-width:768px) {
 .header-icons .icon {
-      width: 30px;
+      width: 0px;
       height: 30px;
-      font-size: 30px;
+      font-size: 15px;
       line-height: 30px;
       }
 }
 
 .header-links .link {
-	color:#000;
+	color:#374f51;
 	border-style: solid;
-	border-color: #000;
+	border-color: #374f51;
 	border-width: 2px;
 	padding: 10px 20px;
-	letter-spacing: .2em;
-	font-family: 'TraditionellSans','Montserrat', sans-serif;
-	font-size: 13px;
+	letter-spacing: .35em;
+	font-family: 'TraditionellSansBold','Montserrat', sans-serif;
+	font-size: 10px;
 }
 
 .header-links .link:hover {
 color: #fff;
-background-color: #000;
+background-color: #374f51;
 }
 
 .user-details h1 {
