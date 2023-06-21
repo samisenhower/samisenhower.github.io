@@ -74,7 +74,7 @@ padding: 0;
 	line-height: 1;
 	color: #ab9b8a;
 	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-bottom: 19px;
 	letter-spacing: .2em;
 	font-family: 'BebasNeueProItalic','Montserrat', sans-serif;
 }
@@ -82,7 +82,7 @@ padding: 0;
 #header-intro .top{
 	margin-top: auto;
 	margin-bottom: auto;
-	font-size: 30px;
+	font-size: 27px;
 	display: block;
 	line-height: 1;
 	color: #374f51;
