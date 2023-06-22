@@ -48,6 +48,7 @@
   z-index: 1;
   text-align: center;
   color:#FFF;
+  background-color: #FFF;
   padding: 20px;
   flex-grow: 1;
   display: flex;
@@ -69,25 +70,25 @@ padding: 0;
 	letter-spacing: .1em;
 }
 #header-intro .site-description {
-	font-size: 14px;
+	font-size: 17px;
 	display: block;
 	line-height: 1;
 	color: #ab9b8a;
-	margin-top: 25px;
-	margin-bottom: 19px;
-	letter-spacing: .2em;
+	margin-top: 28px;
+	margin-bottom: 23px;
+	letter-spacing: .1em;
 	font-family: 'BebasNeueProItalic','Montserrat', sans-serif;
 }
 
 #header-intro .top{
 	margin-top: auto;
 	margin-bottom: auto;
-	font-size: 27px;
+	font-size: 30px;
 	display: block;
-	line-height: 1;
+	line-height: 1.8;
 	color: #374f51;
 	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
-	xletter-spacing: -1px;
+	xletter-spacing: -.001em;
 }
 
 #header-intro .middle{
@@ -95,6 +96,8 @@ display: flex;
 flex-grow: 1;
 flex-direction: column;
 justify-content:center;
+margin-top: 50px;
+margin-bottom: 50px;
 
 }
 
@@ -109,8 +112,8 @@ margin-bottom: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: center;
+  margin-bottom: 13px;
 }
 
 .header-icons a {
@@ -119,7 +122,6 @@ margin-bottom: auto;
     border: none !important;
     outline-style: none !important;
     -moz-outline-style: none !important;
-
     padding: none;
     margin: none;
   }
@@ -128,10 +130,11 @@ margin-bottom: auto;
     color: #ab9b8a;
     width: 0px;
     height: 20px;
-    font-size: 15px;
-    padding: 10px;
+    font-size: 14px;
+    padding: 7px;
     margin: 5px;
     transition: all .5s;
+    border: 0;
     }
     .header-icons:hover {
       color: #ff0000;
@@ -148,7 +151,7 @@ margin-bottom: auto;
 .header-icons .icon {
       width: 0px;
       height: 30px;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 30px;
       }
 }
@@ -158,10 +161,10 @@ margin-bottom: auto;
 	border-style: solid;
 	border-color: #374f51;
 	border-width: 2px;
-	padding: 10px 20px;
-	letter-spacing: .35em;
+	padding: 9px 9px;
+	letter-spacing: .2em;
 	font-family: 'TraditionellSansBold','Montserrat', sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 }
 
 .header-links .link:hover {
@@ -199,4 +202,19 @@ max-width: 10000px;
 	color: #374f51;
 	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
 	xletter-spacing: -1px;
+}
+
+#header .top{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 27px;
+	display: block;
+	line-height: 1;
+	color: #374f51;
+	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
+	xletter-spacing: -1px;
+}
+
+.bgc {
+background-color: #e5e6e1;
 }
