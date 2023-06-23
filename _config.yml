@@ -10,13 +10,14 @@ user_description: I'm a Software Engineer from Argentina, always searching for t
 user_title: VIDEOGRAPHER
 email: video@samisenhower.com
 # twitter_username: lorem_ipsum
-instagram_username: samisenhower
+instagram_username: sam.isenhower
 facebook_username: mauricio.urraco
 linkedin_username: murraco
 github_username:  murraco
 # medium_username: lorem_ipsum
 # medium_url: lorem_ipsum.medium.com
 # gplus_username:  lorem_ipsum
+vimeo_username: samisenhower
 
 exclude: ['package.json', 'src', 'node_modules', 'vendor']
 

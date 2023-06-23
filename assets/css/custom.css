@@ -8,11 +8,13 @@
  background: url("/assets/img/pic3.png");
  background-size: cover;
  background-position: center;
+ min-height: 50vh;
 }
 
 @media screen and (min-width:700px){
 #particles-js {
  flex-basis: 50%;
+ min-height: 100vh;
  }
  #top-wrapper{
  flex-wrap:unset;
