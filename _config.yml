@@ -18,6 +18,7 @@ github_username:  murraco
 # medium_url: lorem_ipsum.medium.com
 # gplus_username:  lorem_ipsum
 vimeo_username: samisenhower
+youtube_username: samisenhower
 
 exclude: ['package.json', 'src', 'node_modules', 'vendor']
 
