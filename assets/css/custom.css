@@ -228,3 +228,12 @@ max-width: 10000px;
 .bgc {
 background-color: #e5e6e1;
 }
+
+.vjs-big-play-button {
+	opacity: 0 !important;
+}
+
+.video-js:hover .vjs-big-play-button {
+	opacity: 1 !important;
+}
+
