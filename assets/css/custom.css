@@ -1,11 +1,12 @@
 #top-wrapper {
   display: flex;
   flex-wrap:wrap;
+  min-height: 100vh;
 }
 
 #particles-js {
  flex-basis: 100%;
- background: url("/assets/img/pic3.png");
+ background: url("/assets/img/BWprofile.png");
  background-size: cover;
  background-position: center;
  min-height: 50vh;
@@ -67,7 +68,7 @@ padding: 0;
 	font-size: 26px;
 	display: block;
 	line-height: 1;
-	color: #374f51;
+	color: #302729;
 	font-family: "bebas-neue-pro", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -89,12 +90,12 @@ padding: 0;
 #header-intro .top{
 	margin-top: auto;
 	margin-bottom: auto;
-	font-size: 30px;
+	font-size: 25px;
 	display: block;
 	line-height: 1.8;
-	color: #374f51;
+	color: #0f0b0c;
 	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
-	xletter-spacing: -.001em;
+	letter-spacing: -.001em;
 }
 
 #header-intro .middle{
@@ -102,8 +103,8 @@ display: flex;
 flex-grow: 1;
 flex-direction: column;
 justify-content:center;
-margin-top: 0px;
-margin-bottom: 35px;
+margin-top: 15px;
+margin-bottom: 43px;
 
 }
 
@@ -164,9 +165,9 @@ margin-bottom: auto;
 }
 
 .header-links .link {
-	color:#374f51;
+	color:#302729;
 	border-style: solid;
-	border-color: #374f51;
+	border-color: #302729;
 	border-width: 2px;
 	padding: 9px 9px;
 	letter-spacing: .28em;
@@ -179,7 +180,7 @@ margin-bottom: auto;
 
 .header-links .link:hover {
 color: #fff;
-background-color: #374f51;
+background-color: #302729;
 }
 
 .user-details h1 {
@@ -226,7 +227,7 @@ max-width: 10000px;
 }
 
 .bgc {
-background-color: #e5e6e1;
+background-color: #d5d7d5;
 }
 
 .vjs-big-play-button {
