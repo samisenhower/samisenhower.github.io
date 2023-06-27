@@ -279,3 +279,8 @@ background-color: #d5d7d5;
     font-size: 150%;
     margin-top: 3em;
 }
+
+.why-video a {
+color: #302729;
+font-weight: 500;
+}
