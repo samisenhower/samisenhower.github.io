@@ -183,6 +183,26 @@ color: #fff;
 background-color: #302729;
 }
 
+.header-links .link2 {
+	color:#302729;
+	border-style: solid;
+	border-color: #f53416;
+	border-width: 2px;
+	padding: 9px 9px;
+	letter-spacing: .28em;
+	font-family: "bebas-neue-pro", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 13px;
+	margin-right: 14px;
+	text-decoration: none;
+}
+
+.header-links .link2:hover {
+color: #fff;
+background-color: #f53416;
+}
+
 .user-details h1 {
 	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
 }
@@ -244,3 +264,18 @@ background-color: #d5d7d5;
 	opacity: 1 !important;
 }
 
+.why-video {
+  text-align: center;
+  margin: 5px auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 95%;
+  h1 {
+    font-weight: 400;
+  }
+}
+
+.why-video h1 {
+    font-size: 150%;
+    margin-top: 3em;
+}
