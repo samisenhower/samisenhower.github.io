@@ -285,3 +285,35 @@ background-color: #d5d7d5;
 color: #302729;
 font-weight: 500;
 }
+
+.videobox {
+display: flex;
+
+flex-wrap: wrap;
+justify-content:center;
+}
+#reel {
+width: 100%;
+height: 95vh;
+}
+#reel2 {
+ height: calc(45vw);
+ padding-top: 28px;
+}
+
+@media screen and (min-width:1000px){
+.videobox {
+ flex-wrap:unset;
+ max-width: calc(177.777778vh);
+ height: calc(34vw);
+ }
+#reel {
+width:23.6%;
+padding-right:20px;
+height: unset;
+}
+#reel2 {
+ height: 100%;
+ padding-top: unset;
+}
+}
