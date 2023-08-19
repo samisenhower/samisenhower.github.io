@@ -299,6 +299,7 @@ height: 95vh;
 #reel2 {
  height: calc(50vw);
  padding-top: 28px;
+ width: 100%;
 }
 
 @media screen and (min-width:1000px){
@@ -315,5 +316,6 @@ height: unset;
 #reel2 {
  height: 100%;
  padding-top: unset;
+ width: calc(100% - 23.6% - 22px);
 }
 }
