@@ -71,6 +71,10 @@ font-weight: 700;
 font-style: normal;
 }
 
+.line-breaker {
+display: inline-block;
+}
+
 #header-intro h2 {
 xmargin-top: 10px;
 margin-bottom: 30px;
