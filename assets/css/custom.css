@@ -1,3 +1,27 @@
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100vw;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 #top-wrapper {
   display: flex;
   flex-wrap:wrap;
@@ -54,10 +78,12 @@
   color:#FFF;
   background-color: #FFF;
   padding: 20px;
+  padding-bottom: 0px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content:center;
+  overflow: hidden;
 }
 
 #header-intro p {
@@ -131,10 +157,9 @@ flex-grow: 1;
 flex-direction: column;
 justify-content:center;
 margin-top: 0;
-margin-bottom: 43px;
+xmargin-bottom: 43px;
 margin-left: 10px;
 margin-right: 10px;
-
 }
 
 
@@ -143,14 +168,14 @@ margin-top: auto;
 margin-bottom: auto;
 }
 
-.scroll-hint{
+/*.scroll-hint{
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
     xcontent: '';
     xdisplay: block;
-    position: absolute;
+    xposition: absolute;
     top: 0;
     xleft: 0;
     width: 100%;
@@ -160,14 +185,24 @@ margin-bottom: auto;
     animation: a-scrollHint 30s linear infinite;
     overflow: hidden;
     box-sizing: border-box;
+}*/
+
+.scroll-hint {
+	width: 15px;
+	height: 400%;
+	background-repeat: repeat-y;
+    background-image: url(../img/dotted-2.svg);
+	align-self: center;
+	margin-top: 40px;
+	animation: a-scrollHint .8s linear infinite;
 }
 
 @keyframes a-scrollHint {
   0% {
-    transform: translateY(-50%);
+    transform: translateY(0%);
   }
   100% {
-    transform: translateY(0%);
+    transform: translateY(15px);
   }
 }
 
@@ -240,6 +275,26 @@ background-color: #f8d260;
 
 .header-links .link:hover {
 background-color: #fff;
+}
+
+.header-links .link3 {
+	color:#333;
+	border-style: solid;
+	border-color: #333;
+	border-width: 2px;
+	padding: 9px 17px;
+	border-radius: 25px;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 15px;
+	margin-right: 14px;
+	text-decoration: none;
+}
+
+.header-links .link3:hover {
+color: #fff;
+background-color: #333;
 }
 
 .header-links .link2 {

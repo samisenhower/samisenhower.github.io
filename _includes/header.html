@@ -1,3 +1,8 @@
+<!--div id="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div-->
 <div id="top-wrapper">
 	<video title="Sam Isenhower College Station digital media marketing freelance videographer" poster="/assets/video/showreel_poster.webp" autoplay muted loop playsinline id="showreel">
 		  <source src="/assets/video/showreel.webm" type="video/webm"/>
@@ -18,8 +23,9 @@
 			<!-- a class="link" href="#portfolio" data-scroll>VIEW MY WORK</a -->
 			<a class="link" aria-label="Send email" href="mailto:{{ site.email }}">Let's Chat</a>
 		  </div>
+	  
 	  </div>
-	  <!-- div class="scroll-hint"></div -->
+	  <!--div id="dots" class="scroll-hint"></div-->
 	  <!-- div class="header-icons">
 		{% if site.email %}
 		<a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i>&#160&#160&#160&#160</a>
@@ -45,3 +51,15 @@
 	  </div -->
 	</div>
 </div>
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
