@@ -650,6 +650,11 @@ font-style: normal;
 font-size: 18px;
 }
 
+#clientcontainer {
+ width: 100vw;
+ overflow: hidden;
+}
+
 #clientlist {
   height: 90px;
   width: 8596px;
