@@ -32,6 +32,7 @@
   margin:0 auto;
   font-family: "proxima-nova", sans-serif;
   background-color: #FFF;
+  xbackground-color: #d5d7d5;
 }
 
 #portfolio h1 {
@@ -609,7 +610,7 @@ margin-top: 30px;
 
 #about {
 xmax-width: 10000px;
-background-color: #d5d7d5;
+xbackground-color: #d5d7d5;
 width: 100%;
 font-family: "proxima-nova", sans-serif;
 }
@@ -635,8 +636,65 @@ max-width: 480px;
 margin-top: 0;
 }
 
+#services {
+xmax-width: 10000px;
+xbackground-color: #d5d7d5;
+background-color: #333333;
+width: 100%;
+font-family: "proxima-nova", sans-serif;
+}
+
+#services h1 {
+color: #FFF;
+font-weight: 700;
+font-style: normal;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+max-width: 500px;
+}
+
+#services h2 {
+color: #FFF;
+font-weight: 600;
+font-style: normal;
+font-size: 18px;
+margin-top: 0;
+xmax-width: 480px;
+}
+
+#services p {
+font-weight: 300;
+color: #FFF;
+}
+
+#services div {
+margin-top: 0;
+}
+
+#icons-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icons-column {
+  flex: 16%;
+  max-width: 16%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#services img {
+  vertical-align: middle;
+}
+
 #clients {
 font-family: "proxima-nova", sans-serif;
+background-color: #fffaeb;
+}
+
+#clients p {
+  margin-top: 0;
 }
 
 #clients h1 {
@@ -648,6 +706,7 @@ font-style: normal;
 font-weight: 500;
 font-style: normal;
 font-size: 18px;
+margin-top: 0;
 }
 
 #clientcontainer {
