@@ -684,8 +684,16 @@ margin-top: 0;
   margin-right: 2%;
 }
 
+@media (max-width: 860px) {
+.icons-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 #services img {
   vertical-align: middle;
+  margin-top: 50px;
 }
 
 #clients {
