@@ -27,6 +27,260 @@
   flex-wrap:wrap;
 }
 
+#portfolio {
+  width: 90%;
+  margin:0 auto;
+  font-family: "proxima-nova", sans-serif;
+  background-color: #FFF;
+}
+
+#portfolio h1 {
+  text-align: center;
+}
+
+#portfolio-row {
+  display: flex;
+  flex-direction: row;
+  xtext-align: center;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#portfolio-row .flex-video {
+  padding: 56.25% 0 0 0;
+  position:relative;
+  flex: 50%;
+  border-radius: .75rem;
+  overflow: hidden;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Portfolio fade in */
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fade-in-up {
+  animation: 0.75s both fadeInUp;
+}
+
+/* Portfolio Thumbnails */
+
+#poster-image {
+background: url('/assets/video/thumbnail_LFH.webp') center center;
+background-size: cover;
+bottom: 0;
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+visibility: visible;
+z-index: 10;
+height: 100%;
+width: 100%;
+}
+
+#hover-image {
+  background: url('/assets/video/thumbnail_LFH_HOVER.webp') center center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: visible;
+  z-index: 11;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+#hover-image:hover {
+  opacity: 1;
+}
+
+#poster-image2 {
+background: url('/assets/video/thumbnail_LFCH.webp') center center;
+background-size: cover;
+bottom: 0;
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+visibility: visible;
+z-index: 10;
+height: 100%;
+width: 100%;
+}
+
+#hover-image2 {
+  background: url('/assets/video/thumbnail_LFCH_HOVER.webp') center center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: visible;
+  z-index: 11;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+#hover-image2:hover {
+  opacity: 1;
+}
+
+#poster-image3 {
+background: url('/assets/video/thumbnail_AkzoNobel.webp') center center;
+background-size: cover;
+bottom: 0;
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+visibility: visible;
+z-index: 10;
+height: 100%;
+width: 100%;
+}
+
+#hover-image3 {
+  background: url('/assets/video/thumbnail_AkzoNobel_HOVER.webp') center center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: visible;
+  z-index: 11;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+#hover-image3:hover {
+  opacity: 1;
+}
+
+#poster-image4 {
+background: url('/assets/video/thumbnail_StillCreek.webp') center center;
+background-size: cover;
+bottom: 0;
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+visibility: visible;
+z-index: 10;
+height: 100%;
+width: 100%;
+}
+
+#hover-image4 {
+  background: url('/assets/video/thumbnail_StillCreek_HOVER.webp') center center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: visible;
+  z-index: 11;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+#hover-image4:hover {
+  opacity: 1;
+}
+
+#poster-image5 {
+background: url('/assets/video/thumbnail_MelroseIN.webp') center center;
+background-size: cover;
+bottom: 0;
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+visibility: visible;
+z-index: 10;
+height: 100%;
+width: 100%;
+}
+
+#hover-image5 {
+  background: url('/assets/video/thumbnail_MelroseIN_HOVER.webp') center center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: visible;
+  z-index: 11;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+#hover-image5:hover {
+  opacity: 1;
+}
+
+#poster-image6 {
+background: url('/assets/video/thumbnail_NatDoorways.webp') center center;
+background-size: cover;
+bottom: 0;
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+visibility: visible;
+z-index: 10;
+height: 100%;
+width: 100%;
+}
+
+#hover-image6 {
+  background: url('/assets/video/thumbnail_NatDoorways_HOVER.webp') center center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: visible;
+  z-index: 11;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+#hover-image6:hover {
+  opacity: 1;
+}
+
 #showreel {
  flex-basis: 100%;
  xmin-height: 50vh;
@@ -47,6 +301,13 @@
  #header-intro{
  xflex-basis: 50%;
  min-width: 400px;
+ }
+ #portfolio-row {
+  flex-direction: row;
+ }
+ #portfolio-row .flex-video {
+  padding: 27% 0 0 0;
+  cursor: pointer;
  }
 }
 
@@ -156,8 +417,8 @@ display: flex;
 flex-grow: 1;
 flex-direction: column;
 justify-content:center;
-margin-top: 0;
-xmargin-bottom: 43px;
+margin-top: 30px;
+margin-bottom: 45px;
 margin-left: 10px;
 margin-right: 10px;
 }
@@ -317,10 +578,6 @@ color: #fff;
 background-color: #f53416;
 }
 
-.user-details h1 {
-	font-family: 'BOOKmanOpti-Light','Montserrat', sans-serif;
-}
-
 .spacera {
 margin-top: 1%;
 }
@@ -339,9 +596,82 @@ width: 20px;
 margin-top: 30px;
 }
 
+.user-details {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.user-details h2 {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #about {
-max-width: 10000px;
-} 
+xmax-width: 10000px;
+background-color: #d5d7d5;
+width: 100%;
+font-family: "proxima-nova", sans-serif;
+}
+
+#about h1 {
+font-weight: 700;
+font-style: normal;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+max-width: 500px;
+}
+
+#about h2 {
+font-weight: 500;
+font-style: normal;
+font-size: 18px;
+margin-top: 0;
+max-width: 480px;
+}
+
+#about div {
+margin-top: 0;
+}
+
+#clients {
+font-family: "proxima-nova", sans-serif;
+}
+
+#clients h1 {
+font-weight: 700;
+font-style: normal;
+}
+
+#clients h2 {
+font-weight: 500;
+font-style: normal;
+font-size: 18px;
+}
+
+#clientlist {
+  height: 90px;
+  width: 8596px;
+}
+
+.clientLogos {
+    width: 400%;
+	background-repeat: repeat-x;
+    background-image: url(../img/clientlogos.webp);
+    background-size: 2149px 90px;
+	xalign-self: center;
+	animation: clientscroll 80s linear infinite;
+}
+
+@keyframes clientscroll {
+  0% {
+    transform: translatex(0px);
+  }
+  100% {
+    transform: translatex(-6477px);
+  }
+}
 
 
 #tagline .top{
@@ -367,7 +697,7 @@ max-width: 10000px;
 }
 
 .bgc {
-background-color: #d5d7d5;
+background-color: #FFF;
 }
 
 .vjs-big-play-button {
@@ -431,4 +761,8 @@ height: unset;
  padding-top: unset;
  width: calc(100% - 23.6% - 22px);
 }
+}
+
+.footer {
+  background: #333;
 }

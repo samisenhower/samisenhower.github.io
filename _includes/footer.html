@@ -1,5 +1,11 @@
 <footer class="footer">
-    <p>&copy; Sam Isenhower</p>
+    <!--p>&copy; Sam Isenhower</p-->
+		{% if site.email %}
+		<a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope" style="font-size: 20px;"></i>&#160: video@samisenhower.com&#160&#160&#160&#160&#160</a>
+		{% endif %}
+		{% if site.instagram_username %}
+		<a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.instagram_username }}"><i class="icon fa fa-instagram" style="font-size: 20px;" aria-hidden="true"></i>&#160&#160&#160&#160</a>
+		{% endif %}
 </footer>
 
 <script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
