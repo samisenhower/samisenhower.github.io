@@ -677,18 +677,48 @@ margin-top: 0;
   flex-wrap: wrap;
 }
 
-.icons-column {
-  flex: 16%;
-  max-width: 16%;
+.icons-columnA {
+  flex: 29.335%;
+  max-width: 29.335%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.icons-columnB {
+  flex: 29.33%;
+  max-width: 29.33%;
   margin-left: 2%;
   margin-right: 2%;
 }
 
-@media (max-width: 850px) {
-.icons-column {
-    flex: 100%;
-    max-width: 100%;
+@media (max-width: 750px) {
+.icons-columnA {
+    flex: 46%;
+    max-width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
+.icons-columnB {
+    flex: 46%;
+    max-width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media (min-width: 1400px) {
+.icons-columnA {
+  flex: 12.665%;
+  max-width: 12.665%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.icons-columnB {
+  flex: 12.67%;
+  max-width: 12.67%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
 }
 
 #services img {
