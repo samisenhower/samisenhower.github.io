@@ -282,6 +282,32 @@ width: 100%;
   opacity: 1;
 }
 
+#portfolio .link {
+color: #0f0b0c;
+background-color: #fff;
+	border-style: solid;
+	border-color: #f8d260;
+	border-width: 2px;
+	padding: 9px 17px;
+	border-radius: 25px;
+	xletter-spacing: .28em;
+	xfont-family: "bebas-neue-pro", sans-serif;
+	  font-family: "proxima-nova", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 15px;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+#portfolio .link:hover {
+background-color: #f8d260;
+}
+
 #showreel {
  flex-basis: 100%;
  xmin-height: 50vh;
@@ -704,7 +730,7 @@ margin-top: 0;
     margin-right: 2%;
   }
 }
-
+/*
 @media (min-width: 1400px) {
 .icons-columnA {
   flex: 12.665%;
@@ -720,7 +746,7 @@ margin-top: 0;
   margin-right: 2%;
 }
 }
-
+*/
 #services img {
   vertical-align: middle;
   margin-top: 50px;

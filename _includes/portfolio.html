@@ -13,6 +13,23 @@
   <div class="flex-video"><div id="hover-image6"></div><div id="poster-image6"></div><iframe src="https://player.vimeo.com/video/877687244?badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Nations Doorways - Brand Video for Ministry Market"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 </div>
 
+<button id="add-more" class="link" onclick="addMore()">See Short Form Examples</button>
+
+<div id="portfolio-page2" style="display: none;">
+<div id="portfolio-row">
+  <div class="flex-video"><div id="hover-image"></div><div id="poster-image"></div><iframe src="https://player.vimeo.com/video/855115095?badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Light Filled Home - Brand Video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  <div class="flex-video"><div id="hover-image2"></div><div id="poster-image2"></div><iframe src="https://player.vimeo.com/video/966373150?badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="LaFollette Custom Homes - VR Promo"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+<div id="portfolio-row">
+  <div class="flex-video"><div id="hover-image3"></div><div id="poster-image3"></div><iframe src="https://player.vimeo.com/video/1006433251?badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="AkzoNobel Testimonial"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  <div class="flex-video"><div id="hover-image4"></div><div id="poster-image4"></div><iframe src="https://player.vimeo.com/video/883410169?badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Still Creek - for Fundraising Event"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+<div id="portfolio-row">
+  <div class="flex-video"><div id="hover-image5"></div><div id="poster-image5"></div><iframe src="https://player.vimeo.com/video/910488669?badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Melrose Indiana - Recruiting Ad"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  <div class="flex-video"><div id="hover-image6"></div><div id="poster-image6"></div><iframe src="https://player.vimeo.com/video/877687244?badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Nations Doorways - Brand Video for Ministry Market"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+</div>
+
 <script>
 // Fade in videos
 const elementsToFadeInUpOnScroll = document.querySelectorAll(".flex-video");
@@ -59,5 +76,13 @@ function movePoster5() {
 function movePoster6() {
   document.getElementById("poster-image6").style.visibility = "hidden";
   document.getElementById("hover-image6").style.visibility = "hidden";
+}
+
+//More button
+function addMore() {
+  var x = document.getElementById("portfolio-page2");
+  var y = document.getElementById("add-more");
+  x.style.display = "block";
+  y.style.display = "none";
 }
 </script>
