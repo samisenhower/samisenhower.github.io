@@ -706,28 +706,36 @@ margin-top: 0;
 .icons-columnA {
   flex: 29.335%;
   max-width: 29.335%;
-  margin-left: 2%;
-  margin-right: 2%;
+  xmargin-left: 2%;
+  xmargin-right: 2%;
+  xflex: 33.335%;
+  xmax-width: 33.335%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .icons-columnB {
   flex: 29.33%;
   max-width: 29.33%;
-  margin-left: 2%;
-  margin-right: 2%;
+  xmargin-left: 2%;
+  xmargin-right: 2%;
+  xflex: 33.33%;
+  xmax-width: 33.33%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 @media (max-width: 750px) {
 .icons-columnA {
     flex: 46%;
     max-width: 46%;
-    margin-left: 2%;
-    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 .icons-columnB {
     flex: 46%;
     max-width: 46%;
-    margin-left: 2%;
-    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
 /*
@@ -747,9 +755,49 @@ margin-top: 0;
 }
 }
 */
+#services .icon-wrapper {
+  margin-top: 50px;
+}
+
 #services img {
   vertical-align: middle;
-  margin-top: 50px;
+}
+
+#services .icon {
+  width: 80px;
+}
+
+@keyframes fadeInUpIcons {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fade-in-up-icons {
+  animation: 0.75s both fadeInUpIcons;
+}
+
+.service-description {
+	display: none;
+}
+
+.see-more {
+	display: block;
+	cursor: pointer;
+}
+
+.more-arrow {
+	width: 15px;
+	margin-left: 5px;
+}
+
+.read-more {
+	font-weight: 700;
+	color: #f8d260;
 }
 
 #clients {
