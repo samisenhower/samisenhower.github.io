@@ -704,57 +704,49 @@ margin-top: 0;
 }
 
 .icons-columnA {
+  flex: 46%;
+    max-width: 46%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.icons-columnB {
+  flex: 46%;
+    max-width: 46%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+@media (max-width: 650px) {
+.icons-columnA {
+    flex: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+.icons-columnB {
+    flex: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 750px) {
+.icons-columnA {
   flex: 29.335%;
   max-width: 29.335%;
-  xmargin-left: 2%;
-  xmargin-right: 2%;
-  xflex: 33.335%;
-  xmax-width: 33.335%;
   padding-left: 2%;
   padding-right: 2%;
 }
+
 .icons-columnB {
   flex: 29.33%;
   max-width: 29.33%;
-  xmargin-left: 2%;
-  xmargin-right: 2%;
-  xflex: 33.33%;
-  xmax-width: 33.33%;
   padding-left: 2%;
   padding-right: 2%;
 }
-
-@media (max-width: 750px) {
-.icons-columnA {
-    flex: 46%;
-    max-width: 46%;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-.icons-columnB {
-    flex: 46%;
-    max-width: 46%;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-}
-/*
-@media (min-width: 1400px) {
-.icons-columnA {
-  flex: 12.665%;
-  max-width: 12.665%;
-  margin-left: 2%;
-  margin-right: 2%;
 }
 
-.icons-columnB {
-  flex: 12.67%;
-  max-width: 12.67%;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-}
-*/
 #services .icon-wrapper {
   margin-top: 50px;
 }
