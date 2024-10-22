@@ -674,6 +674,7 @@ font-family: "proxima-nova", sans-serif;
 #services h1 {
 color: #FFF;
 font-weight: 700;
+font-size: 35px;
 font-style: normal;
 margin-left: auto;
 margin-right: auto;
@@ -682,7 +683,6 @@ max-width: 500px;
 }
 
 #services h2 {
-color: #FFF;
 font-weight: 600;
 font-style: normal;
 font-size: 18px;
@@ -692,7 +692,10 @@ xmax-width: 480px;
 
 #services p {
 font-weight: 300;
-color: #FFF;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
 }
 
 #services div {
@@ -707,49 +710,96 @@ margin-top: 0;
 .icons-columnA {
   flex: 46%;
     max-width: 46%;
-    padding-left: 2%;
-    padding-right: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #333;
+    border-radius: .75rem;
+    margin-bottom: 4vw;
+    color: #fff;
+    border-style: solid;
+	border-width: 2px;
+	border-color: #fff;
+	box-sizing: border-box;
 }
+
+.icons-columnA h2 {
+    color: #fff;
+}
+
+.icons-columnA:hover, .icons-columnA:hover h2 {
+	background-color: #333;
+	color: #fff;
+}
+
+.icons-columnA:hover {
+	border-style: solid;
+	border-color: #f8d260;
+	box-sizing: border-box;
+}
+
 .icons-columnB {
   flex: 46%;
     max-width: 46%;
-    padding-left: 2%;
-    padding-right: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #333;
+    border-radius: .75rem;
+    margin-bottom: 4vw;
+    color: #fff;
+    border-style: solid;
+	border-width: 2px;
+	border-color: #fff;
+	box-sizing: border-box;
 }
 
-@media (max-width: 650px) {
+.icons-columnB h2 {
+    color: #fff;
+}
+
+.icons-columnB:hover, .icons-columnB:hover h2 {
+	background-color: #333;
+	color: #fff;
+}
+
+.icons-columnB:hover {
+	border-style: solid;
+	border-color: #f8d260;
+	box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
 .icons-columnA {
     flex: 100%;
     max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 .icons-columnB {
     flex: 100%;
     max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 950px) {
 .icons-columnA {
   flex: 29.335%;
   max-width: 29.335%;
-  padding-left: 2%;
-  padding-right: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .icons-columnB {
   flex: 29.33%;
   max-width: 29.33%;
-  padding-left: 2%;
-  padding-right: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 }
 
 #services .icon-wrapper {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #services img {
