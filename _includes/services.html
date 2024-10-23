@@ -1,3 +1,7 @@
+<div id="navbar2">
+  <!--a class="link" aria-label="Send email" href="mailto:{{ site.email }}">Email Me</a-->
+  <a class="link2" href="mailto:{{ site.email }}"><img src="/assets/img/email_icon2.webp" alt="EmailMe" width="50px" height="50px"></a>
+</div>
 <div class="user-details" id="about-text">
   <!--h2 style="color: #fff;"><br /><br /><br />Video types that my clients have found most effective:<br /><br /></h2-->
   <h2><br /><br /><br /></h2>
@@ -123,4 +127,20 @@ if (iconsToFadeInUpOnScroll) {
   function unhoverFundraising() {
     document.getElementById("fundraising-icon").src="../assets/img/icons_fundraiser_white.webp";
   }
+  
+  //testing out code for pop up email button when leaving the welcome section
+const EmailMeButton = document.querySelectorAll("#brand-icon");
+if (EmailMeButton) {
+  window.addEventListener("scroll", function(event) {
+    EmailMeButton.forEach(function(element) {
+      if (window.scrollY >= (element.offsetTop - window.innerHeight)) {
+        x = document.getElementById("navbar2");
+   		x.style.right = "15px";
+      } else {
+        y = document.getElementById("navbar2");
+    	y.style.right = "-100px";
+      }
+    });
+  });
+}
 </script>

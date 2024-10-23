@@ -1,7 +1,5 @@
 <!--div id="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
+  <a class="link" aria-label="Send email" href="mailto:{{ site.email }}">Email Me</a>
 </div-->
 <div id="top-wrapper">
 	<video title="Sam Isenhower College Station digital media marketing freelance videographer" poster="/assets/video/showreel_poster.webp" autoplay muted loop playsinline id="showreel">
@@ -57,9 +55,11 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
+    x = document.getElementById("navbar");
+    x.style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    y = document.getElementById("navbar");
+    y.style.top = "-60px";
   }
 }
 </script>
