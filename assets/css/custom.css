@@ -41,7 +41,7 @@
 
 #portfolio-row {
   display: flex;
-  flex-direction: row;
+  xflex-direction: row;
   xtext-align: center;
   flex-direction: column;
   margin-top: 0;
@@ -639,6 +639,55 @@ xmax-width: 10000px;
 xbackground-color: #d5d7d5;
 width: 100%;
 font-family: "proxima-nova", sans-serif;
+}
+
+#about .wrapper {
+display: flex;
+flex-direction: column;
+  xmargin-top: 0;
+  xmargin-bottom: 0;
+}
+
+#about .about-words {
+  xpadding: 56.25% 0 0 0;
+  position:relative;
+  flex: 50%;
+  border-radius: .75rem;
+  overflow: hidden;
+  display: block;
+  xmargin-right: 1%;
+  xmargin-left: 5%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#about .about-video {
+  padding: 50.625% 0 0 0;
+  position:relative;
+  flex: 90%;
+  border-radius: .75rem;
+  overflow: hidden;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 0;
+  margin-bottom: 99px;
+}
+
+@media screen and (min-width:950px){
+#about .wrapper {
+  flex-direction: row;
+ }
+#about .about-video {
+  padding: 25.3125% 0 0 0;
+  margin-left: 0;
+  flex: 45%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+ }
+#about .about-words {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 }
 
 #about h1 {
