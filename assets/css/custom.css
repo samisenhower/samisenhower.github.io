@@ -95,10 +95,11 @@ background-color: #fff;
 #navbar2 .link2 {
   position: relative;
   float: right;
+  transition: all .2s ease-in-out;
 }
 
 #navbar2 .link2:hover {
-
+  transform: scale(1.1);
 }
 
 #top-wrapper {
