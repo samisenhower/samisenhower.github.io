@@ -65,33 +65,6 @@ background-color: #f8d260;
 background-color: #fff;
 }
 
-#navbar2 .link {
-color: #0f0b0c;
-background-color: #f8d260;
-	border-style: solid;
-	border-color: #f8d260;
-	border-width: 2px;
-	padding: 7px 15px;
-	border-radius: 25px;
-	xletter-spacing: .28em;
-	  font-family: "proxima-nova", sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	font-size: 13px;
-	xmargin-right: 14px;
-	position: relative;
-  float: right;
-  xmargin-top: 10px;
-    xmargin-bottom: 10px;
-    xmargin-right: 50px;
-    xz-index: 22;
-    text-decoration: none;
-}
-
-#navbar2 .link:hover {
-background-color: #fff;
-}
-
 #navbar2 .link2 {
   position: relative;
   float: right;
@@ -837,14 +810,36 @@ margin-top: 0;
   flex-wrap: wrap;
 }
 
+.hover-boxA {
+	flex: 50%;
+	max-width: 50%;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 2%;
+	padding-right: 2%;
+	box-sizing: border-box;
+	padding-bottom: 3.2vw;
+}
+
+.hover-boxB {
+	flex: 50%;
+	max-width: 50%;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 2%;
+	padding-right: 2%;
+	box-sizing: border-box;
+	padding-bottom: 3.2vw;
+}
+
 .icons-columnA {
-  flex: 46%;
-    max-width: 46%;
-    margin-left: 2%;
-    margin-right: 2%;
+    xflex: 46%;
+	xmax-width: 46%;
+    xmargin-left: 0;
+    xmargin-right: 0;
     background-color: #333;
     border-radius: .75rem;
-    margin-bottom: 3.2vw;
+    xmargin-bottom: 3.2vw;
     color: #fff;
     border-style: solid;
 	border-width: 2px;
@@ -868,13 +863,13 @@ margin-top: 0;
 }
 
 .icons-columnB {
-  flex: 46%;
-    max-width: 46%;
-    margin-left: 2%;
-    margin-right: 2%;
+    xflex: 46%;
+    xmax-width: 46%;
+    xmargin-left: 0;
+    xmargin-right: 0;
     background-color: #333;
     border-radius: .75rem;
-    margin-bottom: 3.2vw;
+    xmargin-bottom: 3.2vw;
     color: #fff;
     border-style: solid;
 	border-width: 2px;
@@ -892,39 +887,37 @@ margin-top: 0;
 }
 
 .icons-columnB:hover {
-	border-style: solid;
 	border-color: #f8d260;
-	box-sizing: border-box;
 }
 
 @media (max-width: 700px) {
-.icons-columnA {
-    flex: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-.icons-columnB {
-    flex: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
+.hover-boxA {
+	flex: 100%;
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+.hover-boxB {
+	flex: 100%;
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
 }
 
 @media (min-width: 950px) {
-.icons-columnA {
-  flex: 29.335%;
-  max-width: 29.335%;
-  margin-left: 2%;
-  margin-right: 2%;
+.hover-boxA {
+  flex: 33.335%;
+  max-width: 33.335%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
-.icons-columnB {
-  flex: 29.33%;
-  max-width: 29.33%;
-  margin-left: 2%;
-  margin-right: 2%;
+.hover-boxB {
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 }
 

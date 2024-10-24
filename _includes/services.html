@@ -1,30 +1,34 @@
 <div id="navbar2">
-  <!--a class="link" aria-label="Send email" href="mailto:{{ site.email }}">Email Me</a-->
   <a class="link2" href="mailto:{{ site.email }}"><img src="/assets/img/email_icon2.webp" alt="EmailMe" width="50px" height="50px"></a>
 </div>
 <div class="user-details" id="about-text">
   <!--h2 style="color: #fff;"><br /><br /><br />Video types that my clients have found most effective:<br /><br /></h2-->
   <h2><br /><br /><br /></h2>
   <div id="icons-container">
-	<div class="icons-columnB" onMouseOver="show('testimonials-description'); hide('testimonials-see-more'); hoverTestimonials()" onMouseOut="hide('testimonials-description'); show('testimonials-see-more'); unhoverTestimonials()">
-		<div class="icon-wrapper">
-			<div id="covergif1"></div>
-			<img id="testimonials-icon" class="icon" src="../assets/img/icons_testimonials_white.webp">
+  	<div class="hover-boxB" onMouseOver="show('testimonials-description'); hide('testimonials-see-more'); hoverTestimonials(); Tborder()" onMouseOut="hide('testimonials-description'); show('testimonials-see-more'); unhoverTestimonials()">
+		<div id="Tbox" class="icons-columnB">
+			<div class="icon-wrapper">
+				<div id="covergif1"></div>
+				<img id="testimonials-icon" class="icon" src="../assets/img/icons_testimonials_white.webp">
+			</div>
+			<h2>Testimonials</h2>
+			<p id="testimonials-see-more" class="see-more">These are your ultimate weapon. No one sells your business better th...<br /><span class="read-more">Read More</span><img class="more-arrow" src="../assets/img/down-arrow.webp" /></p>
+			<p id="testimonials-description" class="service-description">These are your ultimate weapon. No one sells your business better than your satisfied customers, especially when their story is told in a way that’s immersive and personal. Testimonial videos work seriously well everywhere your business shows its face online.</p>
 		</div>
-		<h2>Testimonials</h2>
-		<p id="testimonials-see-more" class="see-more">These are your ultimate weapon. No one sells your business better th...<br /><span class="read-more">Read More</span><img class="more-arrow" src="../assets/img/down-arrow.webp" /></p>
-		<p id="testimonials-description" class="service-description">These are your ultimate weapon. No one sells your business better than your satisfied customers, especially when their story is told in a way that’s immersive and personal. Testimonial videos work seriously well everywhere your business shows its face online.</p>
 	</div>
-	<div class="icons-columnA"  onMouseOver="show('brand-description'); hide('brand-see-more'); hoverBrand()" onMouseOut="hide('brand-description'); show('brand-see-more'); unhoverBrand()">
-		<div class="icon-wrapper">
-			<div id="covergif2"></div>
-			<img id="brand-icon" class="icon" src="../assets/img/icons_brand_white.webp">
+	<div class="hover-boxA" onMouseOver="show('brand-description'); hide('brand-see-more'); hoverBrand()" onMouseOut="hide('brand-description'); show('brand-see-more'); unhoverBrand()">
+		<div id="Bbox" class="icons-columnA">
+			<div class="icon-wrapper">
+				<div id="covergif2"></div>
+				<img id="brand-icon" class="icon" src="../assets/img/icons_brand_white.webp">
+			</div>
+			<h2>Brand Videos</h2>
+			<p id="brand-see-more" class="see-more">A great brand video on your website converts every visitor to someon...<br /><span class="read-more">Read More</span><img class="more-arrow" src="../assets/img/down-arrow.webp" /></p>
+			<p id="brand-description" class="service-description">A great brand video on your website converts every visitor to someone who feels they know, like, and trust you. In less than 3 minutes you go from a faceless entity to someone they want to do business with. That’s why brand videos are worth their weight in gold.</p>
 		</div>
-		<h2>Brand Videos</h2>
-		<p id="brand-see-more" class="see-more">A great brand video on your website converts every visitor to someon...<br /><span class="read-more">Read More</span><img class="more-arrow" src="../assets/img/down-arrow.webp" /></p>
-		<p id="brand-description" class="service-description">A great brand video on your website converts every visitor to someone who feels they know, like, and trust you. In less than 3 minutes you go from a faceless entity to someone they want to do business with. That’s why brand videos are worth their weight in gold.</p>
 	</div>
-	<div class="icons-columnA"  onMouseOver="show('social-description'); hide('social-see-more'); hoverSocial()" onMouseOut="hide('social-description'); show('social-see-more'); unhoverSocial()">
+	<div class="hover-boxA" onMouseOver="show('social-description'); hide('social-see-more'); hoverSocial()" onMouseOut="hide('social-description'); show('social-see-more'); unhoverSocial()">
+	<div id="Sbox" class="icons-columnA">
 		<div class="icon-wrapper">
 			<div id="covergif3"></div>
 			<img id="social-icon" class="icon" src="../assets/img/icons_socials_white.webp">
@@ -33,7 +37,9 @@
 		<p id="social-see-more" class="see-more">Quick, eye-catching, and packed with value—these videos are built fo...<br /><span class="read-more">Read More</span><img class="more-arrow" src="../assets/img/down-arrow.webp" /></p>
 		<p id="social-description" class="service-description">Quick, eye-catching, and packed with value—these videos are built for fast scrolling and short attention spans. When done right, they’re one of the best ways to get new eyes on your business while also leading them progressively down the funnel to conversion.</p>
 	</div>
-	<div class="icons-columnA"  onMouseOver="show('ads-description'); hide('ads-see-more'); hoverAds()" onMouseOut="hide('ads-description'); show('ads-see-more'); unhoverAds()">
+	</div>
+	<div class="hover-boxA" onMouseOver="show('ads-description'); hide('ads-see-more'); hoverAds()" onMouseOut="hide('ads-description'); show('ads-see-more'); unhoverAds()">
+	<div id="Abox" class="icons-columnA">
 		<div class="icon-wrapper">
 			<div id="covergif4"></div>
 			<img id="ads-icon" class="icon" src="../assets/img/icons_ads_white.webp">
@@ -42,7 +48,9 @@
 		<p id="ads-see-more" class="see-more">Advertising is evolving at a mind-boggling rate, with advanced targe...<br /><span class="read-more">Read More</span><img class="more-arrow" src="../assets/img/down-arrow.webp" /></p>
 		<p id="ads-description" class="service-description">Advertising is evolving at a mind-boggling rate, with advanced targeting and ever-changing strategies across platforms. One thing remains constant: video ads consistently deliver the highest click-through rates, especially when optimized to perform wherever they appear.</p>
 	</div>
-	<div class="icons-columnA"  onMouseOver="show('recruiting-description'); hide('recruiting-see-more'); hoverRecruiting()" onMouseOut="hide('recruiting-description'); show('recruiting-see-more'); unhoverRecruiting()">
+	</div>
+	<div class="hover-boxA" onMouseOver="show('recruiting-description'); hide('recruiting-see-more'); hoverRecruiting()" onMouseOut="hide('recruiting-description'); show('recruiting-see-more'); unhoverRecruiting()">
+	<div id="Rbox" class="icons-columnA">
 		<div class="icon-wrapper">
 			<div id="covergif5"></div>
 			<img id="recruiting-icon" class="icon" src="../assets/img/icons_recruiting_white.webp">
@@ -51,7 +59,9 @@
 		<p id="recruiting-see-more" class="see-more">These show off your company’s personality and culture, giving potent...<br /><span class="read-more">Read More</span><img class="more-arrow" src="../assets/img/down-arrow.webp" /></p>
 		<p id="recruiting-description" class="service-description">These show off your company’s personality and culture, giving potential employees a sneak peek at what makes your team special. They’re the perfect tool for attracting top talent who share your values and want to be part of something bigger.</p>
 	</div>
-	<div class="icons-columnB"  onMouseOver="show('fundraising-description'); hide('fundraising-see-more'); hoverFundraising()" onMouseOut="hide('fundraising-description'); show('fundraising-see-more'); unhoverFundraising()">
+	</div>
+	<div class="hover-boxB" onMouseOver="show('fundraising-description'); hide('fundraising-see-more'); hoverFundraising()" onMouseOut="hide('fundraising-description'); show('fundraising-see-more'); unhoverFundraising()">
+	<div id="Fbox" class="icons-columnB">
 		<div class="icon-wrapper">
 			<div id="covergif6"></div>
 			<img id="fundraising-icon" class="icon" src="../assets/img/icons_fundraiser_white.webp">
@@ -59,6 +69,7 @@
 		<h2>Fundraising</h2>
 		<p id="fundraising-see-more" class="see-more">There are countless worthy causes, but only a select number of those...<br /><span class="read-more">Read More</span><img class="more-arrow" src="../assets/img/down-arrow.webp" /></p>
 		<p id="fundraising-description" class="service-description">There are countless worthy causes, but only a select number of those grab our hearts to make us personally and financially invested. By stirring the hearts of donors and investors with real stories of impact, you not only show the worthiness of your mission. You gain long-term partners.</p>
+	</div>
 	</div>
   </div>
 </div>
@@ -93,42 +104,54 @@ if (iconsToFadeInUpOnScroll) {
   }
   function hoverTestimonials() {
     document.getElementById("testimonials-icon").src="../assets/img/icons_testimonials_yellow.webp";
+    document.getElementById('Tbox').style.borderColor = "#f8d260";
   }
   function unhoverTestimonials() {
     document.getElementById("testimonials-icon").src="../assets/img/icons_testimonials_white.webp";
+    document.getElementById('Tbox').style.borderColor = "#fff";
   }
   function hoverBrand() {
     document.getElementById("brand-icon").src="../assets/img/icons_brand_yellow.webp";
+    document.getElementById('Bbox').style.borderColor = "#f8d260";
   }
   function unhoverBrand() {
     document.getElementById("brand-icon").src="../assets/img/icons_brand_white.webp";
+    document.getElementById('Bbox').style.borderColor = "#fff";
   }
   function hoverSocial() {
     document.getElementById("social-icon").src="../assets/img/icons_socials_yellow.webp";
+    document.getElementById('Sbox').style.borderColor = "#f8d260";
   }
   function unhoverSocial() {
     document.getElementById("social-icon").src="../assets/img/icons_socials_white.webp";
+    document.getElementById('Sbox').style.borderColor = "#fff";
   }
   function hoverAds() {
     document.getElementById("ads-icon").src="../assets/img/icons_ads_yellow.webp";
+    document.getElementById('Abox').style.borderColor = "#f8d260";
   }
   function unhoverAds() {
     document.getElementById("ads-icon").src="../assets/img/icons_ads_white.webp";
+    document.getElementById('Abox').style.borderColor = "#fff";
   }
   function hoverRecruiting() {
     document.getElementById("recruiting-icon").src="../assets/img/icons_recruiting_yellow.webp";
+    document.getElementById('Rbox').style.borderColor = "#f8d260";
   }
   function unhoverRecruiting() {
     document.getElementById("recruiting-icon").src="../assets/img/icons_recruiting_white.webp";
+    document.getElementById('Rbox').style.borderColor = "#fff";
   }
   function hoverFundraising() {
     document.getElementById("fundraising-icon").src="../assets/img/icons_fundraiser_yellow.webp";
+    document.getElementById('Fbox').style.borderColor = "#f8d260";
   }
   function unhoverFundraising() {
     document.getElementById("fundraising-icon").src="../assets/img/icons_fundraiser_white.webp";
+    document.getElementById('Fbox').style.borderColor = "#fff";
   }
   
-  //testing out code for pop up email button when leaving the welcome section
+  //Email widget
 const EmailMeButton = document.querySelectorAll("#brand-icon");
 if (EmailMeButton) {
   window.addEventListener("scroll", function(event) {
