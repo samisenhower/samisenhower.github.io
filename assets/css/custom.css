@@ -1105,6 +1105,381 @@ height: unset;
 }
 }
 
+#packages {
+	font-family: "proxima-nova", sans-serif;
+}
+
+#packages-bg {
+	xbackground-color: rgba(51, 51, 51, .8);
+	xbackground-color: #fffaeb;
+	border-radius: 2rem;
+	overflow: hidden;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5vw;
+	position:relative;
+}
+
+#packages .head {
+	text-align: center;
+}
+
+#packages h1 {
+	color: #333;
+}
+
+#packages h2 {
+	font-weight: 500;
+	font-style: normal;
+	font-size: 18px;
+	color: #333;
+}
+
+#prob-sol {
+	display: flex;
+	flex-wrap:wrap;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5vw;
+}
+
+#problem {
+	xmax-width: 30%;
+	xflex: 30%;
+	xmargin-left: 10%;
+	xmargin-right: 10%;
+	max-width: 50%;
+	flex: 50%;
+	text-align: center;
+	xbackground-color: #fffaeb;
+	background-color: rgba(255, 235, 235, .5);
+	border-radius: 1rem;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	vertical-align: middle;
+}
+
+#solution {
+	xmax-width: 30%;
+	xflex: 30%;
+	xmargin-left: 10%;
+	xmargin-right: 10%;
+	max-width: 50%;
+	flex: 50%;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+#prob-sol h2 {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 0;
+	padding-top: 0;
+	text-align: left;
+}
+
+#packages p {
+	color: #333;
+}
+
+#package-wrapper {
+	display: flex;
+	flex-wrap:wrap;
+	xmargin-top: 7vw;
+}
+
+#package-videos {
+	xbackground-color: #f8d260;
+	xbackground-color: rgba(51, 51, 51, .2);
+	xborder-radius: 2rem;
+	overflow: hidden;
+	max-width: 45%;
+	flex: 45%;
+	margin-left: 5%;
+	xmargin-right: auto;
+	xposition:relative;
+}
+
+#package-deliverables {
+	flex: 80%;
+	max-width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 0;
+	xbackground-color: rgba(51, 51, 51, .8);
+	xborder-radius: 2rem;
+	xoverflow: hidden;
+}
+
+#deliverables-and-CTA-container {
+	flex: 50%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#package-wrapper h1 {
+	font-size: 150%;
+	color: #333;
+	margin-top: 0;
+}
+
+#package-wrapper h2 {
+	font-size: 100%;
+	color: #333;
+}
+
+#package-wrapper .video-list {
+	font-size: 100%;
+	xcolor: #f8d260;
+	xcolor: #f0b813;
+	color: #333;
+	margin-bottom: 10px;
+	line-height: 1;
+	margin-top: 10px;
+	font-weight: 700;
+}
+
+.marker {
+	xbackground-color: #f8d260;
+	xbackground-color: rgba(248, 210, 96, .7);
+	background-color: #ffe082;
+}
+
+#package-wrapper .video-item {
+	font-size: 100%;
+	color: #333;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	line-height: 1;
+	margin-left: 15px;
+	font-weight: 600;
+}
+
+#package-wrapper .video-description {
+	font-size: 100%;
+	color: #333;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 55px;
+}
+
+#packages .deliverable-icon {
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 40px;
+	height: 40px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#package-video-wrapper {
+	display: flex;
+	flex-wrap:wrap;
+}
+
+#packages .flex-video {
+  position:relative;
+  flex: 50%;
+  border-radius: .75rem;
+  overflow: hidden;
+  xmargin-right: 1%;
+  xmargin-left: 1%;
+  xmargin-top: 1%;
+  xmargin-bottom: 1%;
+}
+
+.pricing-guide {
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	color: #0f0b0c;
+	margin-left: calc(10% - 17px);
+}
+
+#packages .guide {
+	transition: all .2s ease-in-out;
+	margin-top: 0;
+	background-color: #fff;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 2px;
+	padding: 4px 15px;
+	border-radius: 25px;
+}
+
+#packages .guide:hover {
+	background-color: #fff;
+	border-color: #f8d260;
+}
+
+
+@media screen and (max-width:1000px){
+	#package-deliverables {
+	flex: 90%;
+	max-width: 90%;
+	margin-top: 2em;
+	}
+	#package-videos {
+	flex: 90%;
+	max-width: 90%;
+	}
+}
+
 .footer {
   background: #333;
 }
+
+/* Packages Test */
+
+#packages-test {
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10vw;
+}
+
+#test-container {
+	display: flex;
+	flex-wrap:wrap;
+}
+
+#test-row1 {
+	flex: 100%;
+	margin-bottom: 4%;
+}
+
+#test-column1 {
+	flex: 38%;
+	margin-right: 2%;
+}
+
+#test-column2 {
+	flex: 58%;
+	margin-left: 2%;
+}
+
+#packages .test-video-top {
+	flex: 100%;
+	padding:56.25% 0 0 0;
+	position:relative;
+	border-radius: .75rem;
+	overflow: hidden;
+}
+
+#packages .test-video1 {
+	flex: 100%;
+	padding:177.78% 0 0 0;
+	position:relative;
+	border-radius: .75rem;
+	overflow: hidden;
+}
+
+#packages .test-video2 {
+	flex: 100%;
+	padding:56.25% 0 0 0;
+	position:relative;
+	border-radius: .75rem;
+	overflow: hidden;
+}
+
+#packages .test-video3 {
+	flex: 100%;
+	padding:56.25% 0 0 0;
+	position:relative;
+	border-radius: .75rem;
+	overflow: hidden;
+}
+
+@keyframes fadeInUpTest {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fade-in-up-test {
+  animation: 0.75s both fadeInUpTest;
+}
+
+/* Popup */
+
+    /* Style for popup overlay */
+    #popupOverlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    }
+    
+    /* Style for popup form */
+    #popupForm {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 40px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 300px;
+      z-index: 1001; /* Ensure the form is above the overlay */
+    }
+
+    #popupForm input {
+      display: block;
+      width: 90%;
+      margin-bottom: 10px;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    #popupForm button {
+      xwidth: 100%;
+      xpadding: 10px;
+      xbackground-color: #007bff;
+      xcolor: white;
+      xborder: none;
+      xcursor: pointer;
+    color: #0f0b0c;
+	background-color: #f8d260;
+	border-style: solid;
+	border-color: #f8d260;
+	border-width: 2px;
+	padding: 9px 17px;
+	border-radius: 25px;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 30px;
+    }
+    
+    #popupForm button:hover {
+    	background-color: #fff;
+    }
+
+    #closeForm {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #007bff;
+    }
