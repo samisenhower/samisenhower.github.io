@@ -1397,6 +1397,18 @@ height: unset;
 	overflow: hidden;
 }
 
+.mobile-shorten {
+	
+}
+
+@media screen and (max-width:500px) {
+
+.mobile-shorten {
+	display: none;	
+}
+
+}
+
 @keyframes fadeInUpTest {
   from {
     transform: translateY(50px);
@@ -1411,7 +1423,8 @@ height: unset;
   animation: 0.75s both fadeInUpTest;
 }
 
-/* Popup */
+
+/* ****************** Popup *********************** */
 
     /* Style for popup overlay */
     #popupOverlay {
