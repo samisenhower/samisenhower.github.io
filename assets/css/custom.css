@@ -1125,6 +1125,10 @@ height: unset;
 	text-align: center;
 }
 
+#packages .head1 {
+	text-align: center;
+}
+
 #packages h1 {
 	color: #333;
 }
@@ -1405,6 +1409,10 @@ height: unset;
 
 .mobile-shorten {
 	display: none;	
+}
+
+#packages .head1 {
+	font-size: 2.3rem;
 }
 
 }
