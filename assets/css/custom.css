@@ -21,6 +21,7 @@
   xdisplay: block;
   transition: right 0.5s;
   z-index: 20;
+  pointer-events: none;
 }
 
 #navbar a {
@@ -69,6 +70,7 @@ background-color: #fff;
   position: relative;
   float: right;
   transition: all .2s ease-in-out;
+  pointer-events: auto;
 }
 
 #navbar2 .link2:hover {
@@ -1338,6 +1340,8 @@ height: unset;
 
 .footer {
   background: #333;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* Packages Test */
