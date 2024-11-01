@@ -1344,6 +1344,10 @@ height: unset;
   padding-bottom: 15px;
 }
 
+.footer a:hover {
+  color: #b5b5b5;
+}
+
 /* Packages Test */
 
 #packages-test {
