@@ -15,8 +15,8 @@
 #navbar2 {
   background: none;
   position: fixed;
-  bottom: 15px;
-  right: -100px;
+  bottom: 25px;
+  right: -120px;
   width: 100vw;
   xdisplay: block;
   transition: right 0.5s;
