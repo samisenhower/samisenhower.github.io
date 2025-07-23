@@ -1,11 +1,20 @@
 <footer class="footer">
+<p><br/></p>
+<img class="white-logo" src="/assets/img/SIVS-logo.svg" style="height:58px; vertical-align: text-top; padding-right:10px">
+<div style="margin-top: 30px;">
+<b>Contact Us:&#160;</b>
     <!--p>&copy; Sam Isenhower</p-->
-		{% if site.instagram_username %}
-		<a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.instagram_username }}"><i class="icon fa fa-instagram" style="font-size: 20px;" aria-hidden="true"></i>&#160&#160&#160&#160</a>
-		{% endif %}
 		{% if site.email %}
-		|&#160&#160&#160&#160<a aria-label="Send email" href="mailto:{{ site.email }}"><!--i class="icon fa fa-envelope" style="font-size: 20px;"></i-->video@samisenhower.com&#160&#160&#160&#160&#160</a>
+		<a aria-label="Send email" href="mailto:{{ site.email }}"><!--i class="icon fa fa-envelope" style="font-size: 20px;"></i-->video@samisenhower.com</a>
 		{% endif %}
+		<!--p>
+		<p style="margin-top:0; margin-bottom:0;"><br/></p>
+		{% if site.instagram_username %}
+		<br/><a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.instagram_username }}"><i class="icon fa fa-instagram" style="font-size: 20px;" aria-hidden="true"></i></a>
+		{% endif %}
+		</p-->
+</div>
+<p><br/></p>
 </footer>
 
 <script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
