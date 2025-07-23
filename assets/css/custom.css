@@ -71,6 +71,11 @@ background-color: #fff;
   float: right;
   transition: all .2s ease-in-out;
   pointer-events: auto;
+  box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.13);
+  border-bottom-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-top-left-radius: 23px;
 }
 
 #navbar2 .link2:hover {
