@@ -1351,6 +1351,9 @@ height: unset;
 .white-logo {
   filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(35deg) brightness(104%) contrast(101%);
 }
+.off-blk-logo {
+  filter: invert(18%) sepia(0%) saturate(268%) hue-rotate(221deg) brightness(98%) contrast(94%);
+}
 
 /* Packages Test */
 
