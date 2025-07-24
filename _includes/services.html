@@ -1,5 +1,5 @@
 <div id="navbar2">
-  <a class="link2" href="mailto:{{ site.email }}"><img src="/assets/img/email_icon3.webp" alt="EmailMe" width="110px" height="42px"></a>
+  <a id="openQuoteFormWidget" class="link2" href="#"><img src="/assets/img/email_icon3.webp" alt="Get a Quote" width="110px" height="42px"></a>
 </div>
 <div class="user-details" id="about-text">
   <!--h2 style="color: #fff;"><br /><br /><br />Video types that my clients have found most effective:<br /><br /></h2-->
@@ -151,19 +151,23 @@ if (iconsToFadeInUpOnScroll) {
     document.getElementById('Fbox').style.borderColor = "#fff";
   }
   
-  //Email widget
-const EmailMeButton = document.querySelectorAll("#brand-icon");
-if (EmailMeButton) {
-  window.addEventListener("scroll", function(event) {
-    EmailMeButton.forEach(function(element) {
-      if (window.scrollY >= (element.offsetTop - window.innerHeight)) {
-        x = document.getElementById("navbar2");
-   		x.style.right = "25px";
-      } else {
-        y = document.getElementById("navbar2");
-    	y.style.right = "-120px";
-      }
-    });
+// ************* Get Quote Widget ***************
+document.getElementById("openQuoteFormWidget").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("popupQuoteOverlay").style.display = "block";
+  document.getElementById("popupQuoteForm").style.display = "block";
+});
+
+// Show/hide widget based on scroll to #brand-icon
+const brandIcon = document.getElementById("brand-icon");
+if (brandIcon) {
+  window.addEventListener("scroll", function() {
+    const navbar2 = document.getElementById("navbar2");
+    if (window.scrollY >= (brandIcon.offsetTop - window.innerHeight)) {
+      navbar2.style.right = "25px";
+    } else {
+      navbar2.style.right = "-120px";
+    }
   });
 }
 </script>

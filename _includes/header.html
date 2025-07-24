@@ -1,6 +1,3 @@
-<!--div id="navbar">
-  <a class="link" aria-label="Send email" href="mailto:{{ site.email }}">Email Me</a>
-</div-->
 <div id="top-wrapper">
 	<video title="Sam Isenhower College Station digital media marketing freelance videographer" poster="/assets/video/showreel_poster_test.jpg" autoplay muted loop playsinline id="showreel">
 		  <source src="/assets/video/showreel.webm" type="video/webm"/>
@@ -20,47 +17,105 @@
 		  <h2>Stand out in your market, build trust insanely fast, and grow with ROI-mindful video production that actually converts.</h2>
 		  <div class="header-links">
 			<!-- a class="link" href="#portfolio" data-scroll>VIEW MY WORK</a -->
-			<a class="link" aria-label="Send email" href="mailto:{{ site.email }}">Get a Quote</a>
+			<a id="openQuoteForm" class="link" href="#">Get a Quote</a>
 		  </div>
 	  
 	  </div>
-	  <!--div id="dots" class="scroll-hint"></div-->
-	  <!-- div class="header-icons">
-		{% if site.email %}
-		<a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i>&#160&#160&#160&#160</a>
-		{% endif %}
-		{% if site.twitter_username %}
-		<a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-		{% endif %}
-		{% if site.instagram_username %}
-		<a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.instagram_username }}"><i class="icon fa fa-instagram" aria-hidden="true"></i>&#160&#160&#160&#160</a>
-		{% endif %}
-		{% if site.facebook_username %}
-		<a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon fa fa-facebook" aria-hidden="true"></i>&#160&#160&#160&#160</a>
-		{% endif %}
-		{% if site.linkedin_username %}
-		<a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i>&#160&#160&#160&#160</a>
-		{% endif %}
-		{% if site.youtube_username %}
-		<a aria-label="My YouTube" target="_blank" href="https://youtube.com/@{{ site.youtube_username }}"><i class="icon fa fa-youtube" aria-hidden="true"></i>&#160&#160&#160&#160</a>
-		{% endif %}
-		{% if site.vimeo_username %}
-		<a aria-label="My Vimeo" target="_blank" href="https://vimeo.com/{{ site.vimeo_username }}"><i class="icon fa fa-vimeo" aria-hidden="true"></i>&#160&#160&#160&#160</a>
-		{% endif %}
-	  </div -->
+
+ <!-- Overlay for quote form popup -->
+  <div id="popupQuoteOverlay"></div>
+
+  <!-- Popup quote form -->
+  <div id="popupQuoteForm">
+    <span id="closeQuoteForm">&times;</span> <!-- Close button -->
+    <form id="quoteContactForm">
+      <input type="text" id="yourName" name="yourName" placeholder="Your Name *" required>
+      <input type="text" id="bizName" name="bizName" placeholder="Business Name *" required>
+      <input type="email" id="yourEmail" name="yourEmail" placeholder="Email *" required>
+      <textarea id="message" name="message" placeholder="How can we help?"></textarea>
+      <button type="submit" id="submitButton">
+      	<span class="button-text">Send Message for a Quote</span>
+      	<span class="spinner" style="display: none;"></span>
+      </button>
+      <h2 style="font-size: 90%; margin-top: 25px; margin-bottom: 0; text-align: center; color: #7a7a7a;">Your information is 100% safe. We hate spam too.</h2>
+    </form>
+  </div>
 	</div>
 </div>
-<!--script>
-// When the user scrolls down 20px from the top of the document, slide down the navbar
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    x = document.getElementById("navbar");
-    x.style.top = "0";
-  } else {
-    y = document.getElementById("navbar");
-    y.style.top = "-60px";
-  }
-}
-</script-->
+<script>
+// *************Popup Form***************
+   // Open form when link is clicked
+    document.getElementById("openQuoteForm").addEventListener("click", function(event) {
+      event.preventDefault();
+      document.getElementById("popupQuoteOverlay").style.display = "block";
+      document.getElementById("popupQuoteForm").style.display = "block";
+    });
+
+    // Close form when the 'X' is clicked
+    document.getElementById("closeQuoteForm").addEventListener("click", function() {
+      document.getElementById("popupQuoteOverlay").style.display = "none";
+      document.getElementById("popupQuoteForm").style.display = "none";
+    });
+
+    // Close form when clicking outside the form
+    document.getElementById("popupQuoteOverlay").addEventListener("click", function() {
+      document.getElementById("popupQuoteOverlay").style.display = "none";
+      document.getElementById("popupQuoteForm").style.display = "none";
+    });
+
+    // Submit form data to Google Forms
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbynsiVjwTUcag4GXgHrAM7Rmd83XFMWG9ljtNqtKnm9l2xAxHwWwTSrnoYN4a3sbgt9Pg/exec'; // Replace with your new web app URL
+  const form = document.forms['quoteContactForm'];
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Show spinner and disable button
+  	const submitButton = document.getElementById('submitButton');
+  	const buttonText = submitButton.querySelector('.button-text');
+  	const spinner = submitButton.querySelector('.spinner');
+  	buttonText.style.display = 'none';
+  	spinner.style.display = 'inline-block';
+  	submitButton.disabled = true;
+    
+    const formData = new FormData(form);
+    fetch(scriptURL, { method: 'POST', body: formData })
+      .then(response => response.json())
+      .then(data => {
+      	// Hide spinner and re-enable button
+      	buttonText.style.display = 'inline';
+      	spinner.style.display = 'none';
+      	submitButton.disabled = false;
+      
+        if (data.result === 'success') {
+          if (typeof swal !== 'undefined') {
+            swal('Done', 'Submitted Successfully.', 'success');
+          } else {
+            alert('Message received! We\'ll be in touch!');
+          }
+          form.reset();
+          document.getElementById("popupQuoteOverlay").style.display = "none";
+          document.getElementById("popupQuoteForm").style.display = "none";
+        } else {
+          if (typeof swal !== 'undefined') {
+            swal('Error', 'Something went wrong. Please try again!', 'error');
+          } else {
+            alert('Yikes, something went wrong. Our apologies! Please contact us directly at video@samisenhower.com.');
+          }
+        }
+      })
+      .catch(error => {
+      	// Hide spinner and re-enable button on error
+      	buttonText.style.display = 'inline';
+      	spinner.style.display = 'none';
+      	submitButton.disabled = false;
+      
+        console.error('Error:', error);
+        if (typeof swal !== 'undefined') {
+          swal('Error', 'Something went wrong. Please try again!', 'error');
+        } else {
+          alert('Something went wrong. Please try again!');
+        }
+      });
+  });
+</script>
