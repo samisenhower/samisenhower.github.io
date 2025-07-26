@@ -385,6 +385,9 @@ background-color: #f8d260;
  flex-wrap:unset;
    min-height: 100vh;
  }
+ #top-wrapper video{
+ 	min-height: 100vh; 
+ }
  #header-intro{
  xflex-basis: 50%;
  min-width: 400px;
