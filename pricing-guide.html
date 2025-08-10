@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'proxima-nova', sans-serif;
+      xbackground-color: #fff;
+      background-color: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    /* Dotted background pattern using pseudo-element for robustness */
+body::before {
+content: '';
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: radial-gradient(#e6e6e6 1px, transparent 1px);
+background-size: 16px 16px;
+z-index: -1; /* Ensure it stays behind content */
+}
+
+    .section {
+      xpadding: 20px 20px;
+      margin: auto;
+      xmax-width: 650px;
+      width: 80%;
+    }
+
+    h1,
+    h2 {
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .highlight {
+      color: #333333;
+      font-weight: 600;
+      text-align: center;
+      font-size: 50px;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 200px;
+      background-color: #e5e5e5;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 16px;
+    }
+    
+    .red-x {
+      color: red;
+      xfont-size: 1.5em;
+      xmargin-right: 10px;
+	}
+	
+	.green-check {
+      color: green;
+      font-size: 2em;
+      xmargin-right: 10px;
+	}
+	
+	.red-x,
+.green-check {
+  flex-shrink: 0; /* Prevent symbols from shrinking */
+  width: 30px; /* Fixed width for consistent spacing */
+  text-align: center; /* Center the symbol within its width */
+  font-size: 1.5em; /* Adjust size as needed */
+  margin-right: 10px; /* Space between symbol and text */
+}
+	
+	/*.fade-item {
+      text-align: center;
+	}
+	
+	.fade-list-item {
+      xtext-align: center;
+	}*/
+	
+	.fade-list-item,
+.fade-item {
+  display: flex;
+  align-items: flex-start; /* Aligns symbol and text at the top */
+  margin-bottom: 10px; /* Space between list items */
+  text-align: left; /* Ensure text aligns left for proper wrapping */
+  align-items: center;
+}
+	
+	.list-wrapper {
+      display: flex;
+      justify-content: center; /* Centers horizontally */
+      xalign-items: center;    /* Centers vertically */
+	}
+	
+	.list {
+      xmargin-left: auto;
+      xmargin-right: auto;
+      xpadding-left: 0;
+      xwidth: 300px;
+      width: 100%;
+      max-width: 400px;
+	}
+	
+	.study-list {
+      width: 100%;
+	}
+	
+	.list-text {
+		flex-grow: 1;
+	}
+	
+	.double-down-arrow {
+  xposition: relative;
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+  text-align: center;
+  /* Other styling for the container, if desired */
+}
+
+.double-down-arrow::before,
+.double-down-arrow::after {
+  content: '';
+  position: absolute;
+  width: 20px; /* Size of individual arrowheads */
+  height: 20px;
+  border-bottom: 3px solid #7d7d7d; /* Arrowhead color and thickness */
+  border-right: 3px solid #7d7d7d;
+  transform: rotate(45deg);
+  left: 50%;
+  transform-origin: center center; /* Ensure correct rotation */
+  animation: bounce 1.5s infinite; /* Apply animation */
+}
+
+.double-down-arrow::before {
+  top: 0; /* Position the first arrowhead */
+}
+
+.double-down-arrow::after {
+  top: 15px; /* Position the second arrowhead below the first */
+  xanimation-delay: 0.2s; /* Stagger the animation for a ripple effect */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(45deg); /* Bounce down */
+  }
+}
+
+	.card-dark {
+		border-radius: 1.5rem;
+  xbackground: white;
+  color: #333333;
+  xpadding: 3rem;
+  xbox-shadow: rgba(0, 0, 0, 0.15) 0px 25px 50px -12px;
+  flex: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 745px;
+	}
+	
+	.card-cstudy {
+		xborder-radius: 1.5rem;
+		xborder-style: solid;
+		xborder-width: 2px;
+		xborder-left: 5px solid;
+		xborder-color: white;
+  xbackground: white;
+  color: white;
+  xpadding: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  xbox-shadow: rgba(0, 0, 0, 0.15) 0px 25px 50px -12px;
+  xflex: 100%;
+  xmargin-left: auto;
+  xmargin-right: auto;
+  xmax-width: 90vw;
+  
+  flex-grow: 1;
+	}
+	
+	.card-white {
+		border-radius: 1.5rem;
+  xpadding: 3rem;
+  xbox-shadow: rgba(0, 0, 0, 0.15) 0px 25px 50px -12px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 100%;
+	}
+	
+	.header-yellow {
+		xcolor: #f8d260;
+		color: #33333;
+	}
+	
+	.header-green {
+		color: green;
+	}
+	
+	.approach-wrapper {
+		width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+	}
+	
+	.content-illustration-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack by default for mobile */
+  align-items: center;
+  gap: 20px;
+}
+	
+	.line-breaker {
+		display: inline-block;
+	}
+	
+	.title {
+		display: flex;
+  		align-items: center; /* Centers items vertically */
+	}
+	
+	.title-wrapper {
+		z-index: 3; /* Ensures title content is above gradient */
+		display: flex;
+		flex-grow: 1;
+		flex-direction: column;
+		justify-content:center;
+	}
+	
+	.title-header {
+		color: white;
+      	font-weight: 600;
+      	text-align: center;
+      	font-size: 80px;
+      	margin-top: 23vh;
+      	line-height: 100%;
+      	text-shadow: 0px 0px 50px rgba(0,0,0,.4);
+	}
+	
+	.subtitle {
+		font-size: 20px;
+		margin-bottom: 35vh;
+		color: white;
+		font-weight: 600;
+		letter-spacing: .02em;
+		text-shadow: 0px 0px 40px rgba(0,0,0,.4);
+	}
+	
+	.off-blk-logo {
+  		filter: invert(18%) sepia(0%) saturate(268%) hue-rotate(221deg) brightness(98%) contrast(94%);
+  		margin-left: auto;
+  		margin-right: auto;
+	}
+	
+	.wht-logo {
+  		filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(35deg) brightness(104%) contrast(101%);
+  		margin-left: auto;
+  		margin-right: auto;
+	}
+	
+	.ylw-logo {
+  		filter: invert(96%) sepia(83%) saturate(3102%) hue-rotate(314deg) brightness(109%) contrast(94%);
+  		margin-left: auto;
+  		margin-right: auto;
+	}
+	
+	.dark-card-section {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vh;
+}
+
+.study-card-section {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  max-width: 96%;
+  padding-top: 4%;
+  padding-bottom: 6%;
+}
+	
+	.dark-card-wrapper {
+		display: flex;
+  flex-wrap: wrap;
+  margin-top: 23vh;
+  margin-bottom: 8vh;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+	}
+	
+	.study-card-wrapper {
+		display: flex;
+		align-items: flex-start;
+		text-align: left;
+  		xflex-wrap: wrap;
+  		xmargin-bottom: 3em;
+  		margin-left: auto;
+  		margin-right: auto;
+  		xjustify-content: center;
+  		max-width: 700px;
+	}
+	
+	.white-card-wrapper {
+		flex: 1;
+  max-width: 100%;
+  margin-bottom: 20px;
+	}
+	
+	.v-market-illustration-wrapper {
+		flex: 1;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+	}
+	
+	.v-market-illustration {
+		width: 100%;
+  max-width: 500px;
+  height: auto;
+	}
+	
+	.header-links {
+	text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.header-links .link {
+		xcolor: #0f0b0c;
+		xbackground-color: #f8d260;
+		color: #333333;
+		background-color: #f8d260;
+		border-style: solid;
+		xborder-color: #f8d260;
+		border-color: #f8d260;
+		border-width: 2px;
+		padding: 9px 10px 9px 17px;
+		border-radius: 25px;
+	  	font-family: "proxima-nova", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 15px;
+		xfont-size: clamp(.7rem,1vw,1rem);
+		margin-right: 14px;
+		text-decoration: none;
+	}
+
+	.header-links .link:hover {
+		xbackground-color: #fff;
+		background: none;
+		color: #333333;
+	}
+	
+	.header-links .openQuoteForm {
+		color: #0f0b0c;
+		background-color: #f8d260;
+		border-style: solid;
+		border-color: #f8d260;
+		border-width: 2px;
+		padding: 9px 17px;
+		border-radius: 25px;
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 15px;
+		margin-right: 14px;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	.header-links .openQuoteForm:hover {
+		background-color: #fff;
+	}
+
+    @media (min-width: 1020px) {
+      /*.section {
+        padding: 40px 16px;
+      }*/
+      .card-dark {
+      	xflex: 46%;
+      	xmax-width: 46%;
+      	xmargin-bottom: 0;
+      }
+      .card-white {
+      	xflex: 46%;
+      	xmax-width: 46%;
+      }
+      .list {
+      	xpadding-left: 13%;
+      	xwidth: 400px;
+      }
+    }
+    
+    /* Media Query for Larger Screens */
+@media (min-width: 1100px) {
+  .content-illustration-wrapper {
+    flex-direction: row; /* Side-by-side layout */
+    align-items: flex-start; /* Align at top */
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .white-card-wrapper {
+    flex: 0 0 50%;
+    max-width: 600px;
+    margin-bottom: 0;
+  }
+
+  .v-market-illustration-wrapper {
+    flex: 0 0 50%;
+    max-width: 500px;
+  }
+
+  .card-dark {
+    flex: 100%; /* Ensure dark card remains full-width */
+    max-width: 745px;
+  }
+}
+
+/* ****************** Quote Form Popup *********************** */
+
+    /* Style for popup overlay */
+    #popupQuoteOverlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    }
+    
+    /* Style for popup form */
+    #popupQuoteForm {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 40px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 300px;
+      z-index: 1001; /* Ensure the form is above the overlay */
+    }
+
+    #popupQuoteForm input {
+      display: block;
+      width: 90%;
+      margin-bottom: 10px;
+      padding: 8px;
+      font-size: 16px;
+    }
+    
+    #popupQuoteForm textarea {
+      display: block;
+      width: 90%;
+      margin-bottom: 10px;
+      padding: 8px;
+      font-size: 16px;
+      resize: none;
+      border-color: #d1d1d1;
+      height:200px;
+    }
+
+    #popupQuoteForm button {
+      xwidth: 100%;
+      xpadding: 10px;
+      xbackground-color: #007bff;
+      xcolor: white;
+      xborder: none;
+      xcursor: pointer;
+    color: #0f0b0c;
+	background-color: #f8d260;
+	border-style: solid;
+	border-color: #f8d260;
+	border-width: 2px;
+	padding: 9px 17px;
+	border-radius: 25px;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	min-width: 220px;
+    }
+    
+    #popupQuoteForm button:hover {
+    	background-color: #fff;
+    }
+    
+    #popupQuoteForm button:disabled {
+  		background-color: #f8d260; /* Keep yellow background */
+  		border-color: #f8d260;
+  		opacity: 0.6; /* Slightly dim to indicate disabled */
+  		cursor: not-allowed;
+	}
+
+	#popupQuoteForm .spinner {
+  		display: inline-block;
+  		width: 16px;
+  		height: 16px;
+  		border: 2px solid rgba(15, 11, 12, 0.3); /* #0f0b0c with opacity */
+  		border-top-color: #0f0b0c; /* Match button text color */
+  		border-radius: 50%;
+  		animation: spin 1s ease-in-out infinite;
+  		margin-left: 8px;
+	}
+	
+	#popupQuoteForm button:disabled .spinner {
+  		margin-left: 0; /* Remove margin when text is hidden */
+  		margin-right: 0; /* Ensure no extra margins */
+	}
+
+	@keyframes spin {
+	  to {
+	    transform: rotate(360deg);
+	  }
+	}
+
+    #closeQuoteForm {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #007bff;
+    }
+    
+    @media screen and (min-width:950px){
+    	#popupQuoteForm {
+    		width: 500px;
+    	}
+    	#popupQuoteForm textarea {
+    		height:125px;
+    	}
+    }
+    
+    .hero {
+    	position: relative; /* Allows absolute positioning of child elements */
+  background-image: url('../assets/guide/header-bg3.webp'); /* Your existing background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 100vh; /* Full viewport height */
+  width: 100%;
+  overflow: hidden; /* Prevents overflow issues */
+    }
+    
+    .gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%, /* Dark at the top (black with 60% opacity) */
+    rgba(0, 0, 0, 0) 50% /* Transparent halfway down */
+  );
+  z-index: 1; /* Places gradient above background image */
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+.section.title {
+  position: relative;
+  z-index: 2; /* Ensures content is above gradient */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.study-title {
+	font-size: 250%;
+	color: white;
+	xtext-transform: uppercase;
+	margin-bottom: 40px;
+	font-style: italic;
+}
+
+.study-icon-1 {
+  background-image: url("../assets/guide/bulb-2.svg"); /* Reference the SVG file */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+  background-size: contain; /* Scale the image to fit without being clipped */
+  width: 40px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
+  /*filter white*/
+  	xfilter: invert(100%) sepia(100%) saturate(1%) hue-rotate(79deg) brightness(102%) contrast(102%);
+  /*filter yellow*/
+  	xfilter: invert(86%) sepia(27%) saturate(913%) hue-rotate(346deg) brightness(99%) contrast(96%);
+  flex-shrink: 0; /* Prevent symbols from shrinking */
+  text-align: center; /* Center the symbol within its width */
+  font-size: 1.5em; /* Adjust size as needed */
+  margin-right: 10px; /* Space between symbol and text */
+  margin-top: .45em;
+}
+
+.study-icon-2 {
+  background-image: url("../assets/guide/bulb-4.svg"); /* Reference the SVG file */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+  background-size: contain; /* Scale the image to fit without being clipped */
+  width: 40px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
+  /*filter white*/
+  	xfilter: invert(100%) sepia(100%) saturate(1%) hue-rotate(79deg) brightness(102%) contrast(102%);
+  /*filter yellow*/
+  	xfilter: invert(86%) sepia(27%) saturate(913%) hue-rotate(346deg) brightness(99%) contrast(96%);
+  flex-shrink: 0; /* Prevent symbols from shrinking */
+  text-align: center; /* Center the symbol within its width */
+  font-size: 1.5em; /* Adjust size as needed */
+  margin-right: 10px; /* Space between symbol and text */
+  margin-top: .45em;
+}
+
+.study-icon-3 {
+  background-image: url("../assets/guide/bar-chart-4-2.svg"); /* Reference the SVG file */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+  background-size: contain; /* Scale the image to fit without being clipped */
+  width: 40px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
+  flex-shrink: 0; /* Prevent symbols from shrinking */
+  text-align: center; /* Center the symbol within its width */
+  font-size: 1.5em; /* Adjust size as needed */
+  margin-right: 10px; /* Space between symbol and text */
+  margin-top: .45em;
+}
+
+.study-icon-4 {
+  background-image: url("../assets/guide/camera-movie-1.svg"); /* Reference the SVG file */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+  background-size: contain; /* Scale the image to fit without being clipped */
+  width: 40px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
+  flex-shrink: 0; /* Prevent symbols from shrinking */
+  text-align: center; /* Center the symbol within its width */
+  font-size: 1.5em; /* Adjust size as needed */
+  margin-right: 10px; /* Space between symbol and text */
+  margin-top: .45em;
+}
+
+.study-icon-4-2 {
+  background-image: url("../assets/guide/camera-movie-1-2.svg"); /* Reference the SVG file */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+  background-size: contain; /* Scale the image to fit without being clipped */
+  width: 40px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
+  flex-shrink: 0; /* Prevent symbols from shrinking */
+  text-align: center; /* Center the symbol within its width */
+  font-size: 1.5em; /* Adjust size as needed */
+  margin-right: 10px; /* Space between symbol and text */
+  margin-top: .45em;
+}
+
+.study-icon-5 {
+  background-image: url("../assets/guide/calculator-1.svg"); /* Reference the SVG file */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+  background-size: contain; /* Scale the image to fit without being clipped */
+  width: 40px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
+  flex-shrink: 0; /* Prevent symbols from shrinking */
+  text-align: center; /* Center the symbol within its width */
+  font-size: 1.5em; /* Adjust size as needed */
+  margin-right: 10px; /* Space between symbol and text */
+  margin-top: .45em;
+}
+
+.study-spacer {
+  width: 40px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.case-study {
+	width: 90%;
+	max-width: 1150px;
+	border-radius: 1.5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.yellow {
+	color: #f8d260;
+}
+
+.mobile-only {
+  display: block; /* Show on mobile */
+  margin-bottom: 50px;
+}
+
+.desktop-only {
+  display: none; /* Hide on mobile */
+}
+
+@media (min-width: 1100px) {
+  .mobile-only {
+    display: none; /* Hide mobile illustration on desktop */
+  }
+
+  .desktop-only {
+    display: flex; /* Show desktop illustration */
+  }
+}
+
+.case-study ul {
+	margin-left: 1em;
+}
+
+#package-wrapper {
+	align-items: flex-start;
+}
+
+#package-wrapper h1 {
+	font-size: 100%;
+	color: white;
+	margin-top: 0;
+	text-align: left;
+	xfont-weight: normal;
+}
+
+#package-wrapper h2 {
+	font-size: 100%;
+	color: white;
+	text-align: left;
+	xfont-weight: normal;
+}
+
+#package-wrapper .video-list {
+	font-size: 100%;
+	color: white;
+	line-height: 1;
+	margin-top: 10px;
+	xfont-weight: normal;
+	text-align: left;
+}
+
+.marker {
+	xbackground-color: white;
+	background-color: #f8d260;
+	color: #1e3449;
+}
+
+#package-wrapper .video-item {
+	font-size: 100%;
+	color: white;
+	margin-top: 0;
+	margin-bottom: .8em;
+	padding-top: 0;
+	xline-height: 1;
+	margin-left: 15px;
+	font-weight: normal;
+	text-align: left;
+	
+	display: flex;
+  	align-items: flex-start; /* Vertically center the icon and text */
+  	xmargin-bottom: 10px; /* Consistent spacing between items */
+}
+
+#package-wrapper .video-description {
+	font-size: 100%;
+	color: white;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 55px;
+	text-align: left;
+}
+
+#package-wrapper .deliverable-icon {
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 40px;
+	height: 40px;
+	margin-top: -.5em;
+	margin-bottom: 0;
+	flex-shrink: 0;
+	vertical-align: top;
+}
+
+.proposal-link {
+	text-decoration: underline;
+	color: rgba(255,255,255,.6);
+}
+
+.proposal-link:hover {
+	color: #f8d260;
+}
+
+  </style>
+</head>
+
+<body>
+<div class="hero">
+  <div class="gradient-overlay"></div> <!-- New gradient overlay -->
+  <section class="section title" id="intro">
+    <div class="title-wrapper">
+      <img class="wht-logo" src="../assets/img/SIVS-logo.svg" style="width: 80%; max-width: 20em; vertical-align: text-top; padding-right:20px; padding-top: 60px;">
+      <h1 class="title-header" style="color: #f8d260;">2025 Pricing Guide</h1>
+      <p class="subtitle" style="text-align: center;"><i>An inside peek at recent project budgets</i></p>
+    </div>
+  </section>
+</div>
+  <!-- Dark Card Section -->
+<section class="dark-card-section" style="margin-bottom: 15vh;">
+  <div class="dark-card-wrapper">
+    <div class="section card-dark" id="goal">
+      <h2 class="header-yellow" style="max-width: 90%; margin-left: auto; margin-right: auto; font-size: 250%; line-height: 1.4em;">Something You Should Know <span class="line-breaker">Before Diving In</span></h2>
+      <div style="padding: 3rem; padding-top: 0;">
+      <p style="max-width: 470px; margin-left: auto; margin-right: auto;">When businesses waste marketing dollars on ineffective videos, <b>the problem isn't usually production quality. <span class="line-breaker">It's lack of strategy.</span></b></p>
+      <div class="list-wrapper">
+        <div class="list">
+          <div class="fade-list-item">
+            <span class="red-x">✗</span> <span class="list-text">Looks nice but doesn't support a measurable goal</span>
+          </div>
+          <div class="fade-list-item">
+            <span class="red-x">✗</span> <span class="list-text">Doesn't connect with the right people</span>
+          </div>
+          <div class="fade-list-item">
+            <span class="red-x">✗</span> <span class="list-text">No clear plan for results</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="section double-down-arrow" style="width: 100%;"></div>
+</section>
+
+<!-- White Card and Illustration Section -->
+<section class="approach-wrapper" style="margin-bottom: 200px;">
+  <div class="content-illustration-wrapper">
+    <div class="white-card-wrapper">
+      <div class="section card-white" id="challenges">
+        <h2 style="text-align: left; font-size: 250%;"><i>Our Approach Is Different</i></h2>
+        <div class="v-market-illustration-wrapper">
+      <img class="v-market-illustration mobile-only" src="../assets/guide/video-marketing3.png" alt="Video marketing illustration">
+    </div>
+        <div class="fade-item">
+          <span class="green-check">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </span>
+          <span class="list-text">We start with your business goals, target audience, <span class="line-breaker">and sales process.</span></span>
+        </div>
+        <div class="fade-item">
+          <span class="green-check">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </span>
+          <span class="list-text">We then tailor a nuanced video strategy <b>customized to the <span class="line-breaker">needs of your business.</b></span></span>
+        </div>
+        <div class="fade-item" style="margin-top: 20px; margin-bottom: 20px;">
+          That’s why you won't see any one-size-fits-all packages in this guide.<br/>Just real examples of businesses using video to overcome challenges.
+        </div>
+        <div class="fade-item header-links" style="margin-top: 30px;">
+          <a id="openQuoteForm" class="link" href="#">Click Here
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 3px; margin-right: 0;"><polyline points="8 4 16 12 8 20"></polyline></svg>
+          </a>
+        </div>
+        <div style="margin-top: 0; margin-bottom: 30px;">
+          <span style="color: #696969;">To Schedule a Free Video Strategy Assessment</span>
+        </div>
+      </div>
+    </div>
+    <div class="v-market-illustration-wrapper desktop-only">
+      <img class="v-market-illustration" src="../assets/guide/video-marketing3.png" alt="Video marketing illustration">
+    </div>
+  </div>
+</section>
+
+  <!-- * * * * * * * Case Study 1 * * * * * * * -->
+  
+<div class="case-study" style="background: #1e3449;">
+<section class="study-card-section">
+  <h2 class="study-title study-fade">Case Study #1: Custom Home Builder</h2>
+  <div class="study-card-wrapper">
+    <div class="study-icon-1 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">The Challenge</span></h3>
+	  <p class="study-fade" style="text-align: left;">This client needed a way to clearly communicate the value of their unique VR design service. In our discovery conversation, they also expressed a general frustration around market visibility.</p>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+    <div class="study-icon-2 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">Our Strategy</span></h3>
+	  <p class="study-fade" style="text-align: left;">After reviewing customer feedback together, we isolated the primary reason customers chose their company. In one word: <i>trustworthiness</i>. We also spent time clarifying the primary value of the VR service to customers: <i>peace of mind before building.</i></p>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+  	<div class="study-spacer"></div>
+  	<div class="card-cstudy">
+	  <p class="study-fade" style="text-align: left; margin-top: 0;">We then built a strategy that leaned hard into those strengths:</p>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+  	<div class="study-spacer"></div>
+  	<div class="list-wrapper" style="color: white; margin-left: 3em;">
+        <div class="study-list">
+          <div class="fade-list-item">
+            <span class="green-check" style="color: white;">
+            	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <span class="list-text">Produced two emotionally compelling <span class="yellow">long-form videos</span>: A homepage testimonial video to highlight trustworthiness, and an explainer video for their VR page to emphasize peace of mind and trustworthiness.</span>
+          </div>
+          <!--div class="fade-list-item">
+            <span class="green-check" style="margin-left: 3em;"></span>
+            <span class="list-text">- A homepage testimonial video to highlight trustworthiness</span>
+          </div-->
+          <div class="fade-list-item">
+            <span class="green-check" style="color: white;">
+            	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <span class="list-text">Repurposed content from the same shoot into various strategically placed <span class="yellow">media marketing assets</span> to boost market visibility.</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="study-card-wrapper">
+    <div class="study-icon-3 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">Results</span> <span style="font-weight: normal; font-size: 90%;"><i>(within 3 months of launch)</i></span></h3>
+	  <ul class="study-fade">
+	  	<li>60% increase in VR-related inquiries</li>
+	  	<li>20% boost in website conversions</li>
+	  	<li>15% increase in social engagement</li>
+	  	<li>Prospects frequently mentioned the videos during sales calls, indicating stronger brand recall</li>
+	  </ul>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+    <div class="study-icon-4-2 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">Deliverables</span></h3>
+      <div id="package-wrapper">
+	  <h2 class="study-fade" style="margin-top: 0; margin-bottom: 2em; font-weight: normal;">We filmed in two locations, the office and a customer’s home. Here’s what we were able to get out of it:</h2>
+			<h1 class="video-list study-fade"><mark class="marker">&#160;2 LONG FORM VIDEOS&#160;</mark></h1>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_ads_white.webp">2-3 min VR service promo</h2>
+					<!--p class="video-description">Primarily lives on a dedicated website page for this service.</p-->
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_testimonials_white.webp">2-3 min testimonial video</h2>
+					<!--p class="video-description">Primarily lives on the custom home builder's homepage.</p-->
+			<h1 class="video-list study-fade"><mark class="marker">&#160;2 SHORT FORM ADS&#160;</mark></h1>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_ads_white.webp">30s VR promo</h2>
+					<!--p class="video-description">A 30s version of the VR promo, to be used as an ad on various platforms, Youtube, FB, email, TV, etc.</p-->
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_brand_white.webp">30s brand awareness ad</h2>
+					<!--p class="video-description">An ad representing the business in general, used for the same purposes as the VR ad.</p-->
+			<h1 class="video-list study-fade"><mark class="marker">&#160;15 REELS&#160;</mark></h1>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_socials_white.webp">5 promoting VR service</h2>
+					<!--p class="video-description">For various platforms, optimized accordingly, as posts and promoted as ads.</p-->
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_socials_white.webp">5 testimonial clips</h2>
+					<!--p class="video-description">Pulled from client interview, each covering a different topic. Used the same as VR reels.</p-->
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_socials_white.webp">5 topical reels feat. owner</h2>
+      </div>
+    </div>
+  </div>
+  <div class="study-card-wrapper" style="margin-top: 18px;">
+    <div class="study-icon-5 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">Project Total: $5495</span></h3>
+	  <p class="study-fade" style="text-align: left;"><a class="proposal-link" href="../assets/guide/originals/Home_Builder_Proposal-Redacted.pdf" target="_blank">View the original itemized budget</a></p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- * * * * * * * Case Study 2 * * * * * * * -->
+
+<div class="case-study" style="background: #1e3449;">
+<section class="study-card-section">
+  <h2 class="study-title study-fade">Case Study #2:<br/>Oral Surgery & Dental Implant Center</h2>
+  <div class="study-card-wrapper">
+    <div class="study-icon-1 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">The Challenge</span></h3>
+	  <p class="study-fade" style="text-align: left;">This practice wanted to strengthen their online presence and grow their patient base. They offered premium care but weren’t seeing that translate into new patient inquiries, and website visitors weren’t converting.</p>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+    <div class="study-icon-2 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">Our Strategy</span></h3>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+  	<div class="study-spacer"></div>
+  	<div class="card-cstudy">
+	  <p class="study-fade" style="text-align: left; margin-top: 0;">We designed a content plan around two goals:</p>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+  	<div class="study-spacer"></div>
+  	<div class="list-wrapper" style="color: white; margin-left: 3em;">
+        <div class="study-list">
+          <div class="fade-list-item">
+            <span class="green-check" style="color: white;">
+            	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <span class="list-text">Build trust through story</span>
+          </div>
+          <!--div class="fade-list-item">
+            <span class="green-check" style="margin-left: 3em;"></span>
+            <span class="list-text">- A homepage testimonial video to highlight trustworthiness</span>
+          </div-->
+          <div class="fade-list-item">
+            <span class="green-check" style="color: white;">
+            	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <span class="list-text">Educate clearly on complex procedures</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="study-card-wrapper">
+  	<div class="study-spacer"></div>
+  	<div class="card-cstudy">
+	  <p class="study-fade" style="text-align: left;">Each quarter, we produce a long-form <span class="yellow">patient/Dr story video</span> and multiple short-form edits that emphasize the clinic’s strengths. We also include <span class="yellow">mini educational clips</span> that address FAQs around procedures and recovery.</p>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+    <div class="study-icon-3 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">Results</span> <span style="font-weight: normal; font-size: 90%;"><i>(within the first 6 months)</i></span></h3>
+	  <ul class="study-fade">
+	  	<li>30% increase in dental implant consultations</li>
+	  	<li>2x engagement on educational content</li>
+	  	<li>160% increase in conversions from paid traffic</li>
+	  	<li>Notable SEO improvements on video-optimized service pages</li>
+	  </ul>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+    <div class="study-icon-4-2 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">12-Month Media Package</span></h3>
+      <div id="package-wrapper">
+			<h1 class="video-list study-fade"><mark class="marker">&#160;EACH QUARTER:&#160;</mark></h1>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_testimonials_white.webp">1 Long Form Video (practice/patient/Dr)</h2>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_brand_white.webp">1  30 second Ad Edit</h2>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_socials_white.webp">9 Short Video Edits</h2>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_socials_white.webp">3 Short Educational Videos</h2>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_pics2_white.webp">10-20 Photos</h2>
+      </div>
+    </div>
+  </div>
+  <div class="study-card-wrapper" style="margin-top: 18px;">
+    <div class="study-icon-5 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">Project Total: $5300 / Quarter</span></h3>
+	  <p class="study-fade" style="text-align: left;"><i>Includes <span class="yellow"><b>20% discount</b></span> for signing a 12-month recurring contract</i></p>
+	  <p class="study-fade" style="text-align: left;"><a class="proposal-link" href="../assets/guide/originals/Medical_Proposal-Redacted.pdf" target="_blank">View the original itemized budget</a></p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- * * * * * * * Case Study 3 * * * * * * * -->
+
+<div class="case-study" style="background: #1e3449;">
+<section class="study-card-section">
+  <h2 class="study-title study-fade">Case Study #3:<br/>Construction & Engineering Industrial Group</h2>
+  <div class="study-card-wrapper">
+    <div class="study-icon-1 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">The Challenge</span></h3>
+	  <p class="study-fade" style="text-align: left;">This industrial group was facing a shortage of qualified tradespeople, limiting their ability to scale. Competitors were actively courting skilled workers through clearer messaging on culture and opportunities.</p>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+    <div class="study-icon-2 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">Our Strategy</span></h3>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+  	<div class="study-spacer"></div>
+  	<div class="card-cstudy">
+	  <p class="study-fade" style="text-align: left; margin-top: 0;">We developed a recruitment media campaign that put their real employees front and center. We highlighted their stories, the quality of their training, and the company’s strong safety culture.<br/><br/>We paired long-form storytelling with short-form assets specifically designed for LinkedIn, trade school outreach, hiring fairs, and other social media.</p>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+    <div class="study-icon-3 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">Results</span> <span style="font-weight: normal; font-size: 90%;"><i>(within the first 10 months)</i></span></h3>
+	  <ul class="study-fade">
+	  	<li>120% increase in applications overall</li>
+	  	<li>40% increase in applications from trade schools</li>
+	  	<li>Internal referrals increased by 25%</li>
+	  	<li>HR team reported improved candidate quality and higher interview-to-hire ratio</li>
+	  </ul>
+    </div>
+  </div>
+  <div class="study-card-wrapper">
+    <div class="study-icon-4-2 study-fade"></div>
+    <div class="card-cstudy">
+      <h3 class="study-fade" style="text-align: left;"><span class="yellow">Deliverables</span></h3>
+      <div id="package-wrapper">
+			<h1 class="video-list study-fade"><mark class="marker">&#160;INITIAL&#160;</mark></h1>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_testimonials_white.webp">3 Long Form Recruiting Videos (culture, employee stories, etc)</h2>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_brand_white.webp">3 Short Form Ads (Targeting workplace safety, benefits, career growth, etc)</h2>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_socials_white.webp">12 Reels (platform optimized)</h2>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_pics2_white.webp">25 Professional Photos</h2>
+			<h1 class="video-list study-fade"><mark class="marker">&#160;MONTHLY&#160;</mark></h1>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_testimonials_white.webp">1 Long Form Video (employee or culture spotlight)</h2>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_brand_white.webp">1 30 second Ad</h2>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_socials_white.webp">8-10 Short Edits</h2>
+				<h2 class="video-item study-fade"><img class="deliverable-icon" src="../assets/img/icons_pics2_white.webp">10-20 Photos</h2>
+      </div>
+    </div>
+  </div>
+  <div class="study-card-wrapper" style="margin-top: 18px;">
+    <div class="study-icon-5 study-fade"></div>
+    <div class="card-cstudy">
+		  <div class="study-card-wrapper">
+		  	<h3 class="study-fade" style="text-align: left; margin-bottom: 0; xmargin-top: .02em;"><span class="yellow">Total:</span></h3>
+		  	<div class="card-cstudy" style="padding-left: .35em;">
+			  <h3 class="study-fade" style="text-align: left; margin-top: 1em; margin-bottom: 0;"><span class="yellow">$9,050 Initial </span><span class="line-breaker" style="font-weight: normal; font-style: italic; font-size: 90%;">(initial production)</span></h3>
+		    </div>
+		  </div>
+		  <div class="study-card-wrapper">
+		  	<div class="study-spacer" style="width: 1.4em; margin-right: 0;"></div>
+		  	<div class="card-cstudy">
+			  <h3 class="study-fade" style="text-align: left; margin-top: 0; margin-bottom: 0;"><span class="yellow">$3,280 / Month </span><span class="line-breaker" style="font-weight: normal; font-style: italic; font-size: 90%;">(recurring annual package with <span class="yellow" style="font-weight: bold;">20% discount</span>)</span></h3>
+		    </div>
+		  </div>
+		  <p class="study-fade" style="text-align: left;"><a class="proposal-link" href="../assets/guide/originals/Indust_Group_Proposal-Redacted.pdf" target="_blank">View the original itemized budget</a></p>
+  	</div>
+  </div>
+</section>
+</div>
+
+<div><br/></div>
+</div>
+
+  <!--section class="section" style="margin-bottom: 80px;">
+	  	<div class="double-down-arrow"></div>
+  </section-->
+  
+<!--div style="background: #d7d7d7;">
+  <section class="section" id="process">
+    <h2>What It’s Like to Work With Us</h2>
+    <p>We’ll walk you through every step. You don’t have to know what to say or how to say it. We’ll help with the planning, the filming, and the editing — all the way through launch. We want this to feel like a load off your plate — not another thing on your plate.</p>
+  </section>
+</div>
+
+  <section class="section" id="get-in-touch">
+    <h2>Next Step</h2>
+    <p>If you're interested in one of the packages — or have questions — let’s schedule a quick call. We’d love to hear more about what you’re hoping for and help you get there.</p>
+  </section-->
+ <!-- Overlay for quote form popup -->
+  <div id="popupQuoteOverlay"></div>
+
+  <!-- Popup quote form -->
+  <div id="popupQuoteForm">
+    <span id="closeQuoteForm">&times;</span> <!-- Close button -->
+    <form id="quoteContactForm">
+      <input type="text" id="yourName" name="yourName" placeholder="Your Name *" required>
+      <input type="text" id="bizName" name="bizName" placeholder="Business Name *" required>
+      <input type="email" id="yourEmail" name="yourEmail" placeholder="Email *" required>
+      <textarea id="message" name="message" placeholder="Your 3 best days and times"></textarea>
+      <button type="submit" id="submitButton">
+      	<span class="button-text">Schedule a Free Assessment</span>
+      	<span class="spinner" style="display: none;"></span>
+      </button>
+      <h2 style="font-size: 90%; margin-top: 25px; margin-bottom: 0; text-align: center; color: #7a7a7a;">Your information is 100% safe. We hate spam too.</h2>
+    </form>
+  </div>
+	</div>
+</div>
+  <script>
+  // Fade in items on scroll
+    ScrollReveal().reveal('.section', {
+      delay: 100,
+      duration: 700,
+      distance: '30px',
+      origin: 'bottom',
+      easing: 'ease-in-out',
+      reset: false,
+      interval: 100
+    });
+    ScrollReveal().reveal('.fade-item', {
+      delay: 100,
+      duration: 700,
+      distance: '30px',
+      origin: 'bottom',
+      easing: 'ease-in-out',
+      reset: false,
+      interval: 100
+    });
+    ScrollReveal().reveal('.fade-list-item', {
+      delay: 100,
+      duration: 700,
+      distance: '30px',
+      origin: 'bottom',
+      easing: 'ease-in-out',
+      reset: false,
+      interval: 100
+    });
+    ScrollReveal().reveal('.study-fade', {
+      delay: 100,
+      duration: 700,
+      distance: '30px',
+      origin: 'bottom',
+      easing: 'ease-in-out',
+      reset: false,
+      interval: 100
+    });
+    // *************Popup Form***************
+   // Open form when link is clicked
+    document.getElementById("openQuoteForm").addEventListener("click", function(event) {
+      event.preventDefault();
+      document.getElementById("popupQuoteOverlay").style.display = "block";
+      document.getElementById("popupQuoteForm").style.display = "block";
+    });
+
+    // Close form when the 'X' is clicked
+    document.getElementById("closeQuoteForm").addEventListener("click", function() {
+      document.getElementById("popupQuoteOverlay").style.display = "none";
+      document.getElementById("popupQuoteForm").style.display = "none";
+    });
+
+    // Close form when clicking outside the form
+    document.getElementById("popupQuoteOverlay").addEventListener("click", function() {
+      document.getElementById("popupQuoteOverlay").style.display = "none";
+      document.getElementById("popupQuoteForm").style.display = "none";
+    });
+
+    // Submit form data to Google Forms
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbynsiVjwTUcag4GXgHrAM7Rmd83XFMWG9ljtNqtKnm9l2xAxHwWwTSrnoYN4a3sbgt9Pg/exec'; // Replace with your new web app URL
+  const form = document.forms['quoteContactForm'];
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Show spinner and disable button
+  	const submitButton = document.getElementById('submitButton');
+  	const buttonText = submitButton.querySelector('.button-text');
+  	const spinner = submitButton.querySelector('.spinner');
+  	buttonText.style.display = 'none';
+  	spinner.style.display = 'inline-block';
+  	submitButton.disabled = true;
+    
+    const formData = new FormData(form);
+    fetch(scriptURL, { method: 'POST', body: formData })
+      .then(response => response.json())
+      .then(data => {
+      	// Hide spinner and re-enable button
+      	buttonText.style.display = 'inline';
+      	spinner.style.display = 'none';
+      	submitButton.disabled = false;
+      
+        if (data.result === 'success') {
+          if (typeof swal !== 'undefined') {
+            swal('Done', 'Submitted Successfully.', 'success');
+          } else {
+            alert('Message received! We\'ll be in touch!');
+          }
+          form.reset();
+          document.getElementById("popupQuoteOverlay").style.display = "none";
+          document.getElementById("popupQuoteForm").style.display = "none";
+        } else {
+          if (typeof swal !== 'undefined') {
+            swal('Error', 'Something went wrong. Please try again!', 'error');
+          } else {
+            alert('Yikes, something went wrong. Our apologies! Please contact us directly at video@samisenhower.com.');
+          }
+        }
+      })
+      .catch(error => {
+      	// Hide spinner and re-enable button on error
+      	buttonText.style.display = 'inline';
+      	spinner.style.display = 'none';
+      	submitButton.disabled = false;
+      
+        console.error('Error:', error);
+        if (typeof swal !== 'undefined') {
+          swal('Error', 'Something went wrong. Please try again!', 'error');
+        } else {
+          alert('Something went wrong. Please try again!');
+        }
+      });
+  });
+  </script>
+</body>
+
+</html>
