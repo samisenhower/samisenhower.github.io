@@ -104,7 +104,7 @@ z-index: -1; /* Ensure it stays behind content */
 	.fade-list-item,
 .fade-item {
   display: flex;
-  align-items: flex-start; /* Aligns symbol and text at the top */
+  xalign-items: flex-start; /* Aligns symbol and text at the top */
   margin-bottom: 10px; /* Space between list items */
   text-align: left; /* Ensure text aligns left for proper wrapping */
   align-items: center;
@@ -574,6 +574,18 @@ z-index: -1; /* Ensure it stays behind content */
     	}
     }
     
+    /* Default alignment for .check-top (larger screens) */
+.green-check.check-top {
+  align-self: center; /* Center on larger screens */
+}
+
+/* Responsive alignment for smaller screens */
+@media screen and (max-width: 950px) {
+  .green-check.check-top {
+    align-self: flex-start; /* Top-aligned on smaller screens */
+  }
+}
+    
     .hero {
     	position: relative; /* Allows absolute positioning of child elements */
   background-image: url('../assets/guide/header-bg3.webp'); /* Your existing background image */
@@ -946,7 +958,7 @@ z-index: -1; /* Ensure it stays behind content */
   	<div class="list-wrapper" style="color: white; margin-left: 3em;">
         <div class="study-list">
           <div class="fade-list-item">
-            <span class="green-check" style="color: white;">
+            <span class="green-check check-top" style="color: white;">
             	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </span>
             <span class="list-text">Produced two emotionally compelling <span class="yellow">long-form videos</span>: A homepage testimonial video to highlight trustworthiness, and an explainer video for their VR page to emphasize both peace of mind and trustworthiness.</span>
@@ -956,7 +968,7 @@ z-index: -1; /* Ensure it stays behind content */
             <span class="list-text">- A homepage testimonial video to highlight trustworthiness</span>
           </div-->
           <div class="fade-list-item">
-            <span class="green-check" style="color: white;">
+            <span class="green-check check-top" style="color: white;">
             	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </span>
             <span class="list-text">Repurposed content from the same shoot into various strategically placed <span class="yellow">media marketing assets</span> to boost market visibility.</span>
