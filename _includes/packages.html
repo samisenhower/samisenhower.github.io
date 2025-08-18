@@ -50,7 +50,7 @@
 					<!--p class="video-description">Pulled from owner interview (answering objections, FAQ, core values, etc). Used the same as VR and testimonial reels.</p-->
 		</div>
 		<div id="CTA">
-				<a id="openFormLink" href="#" class="pricing-guide"><h1 class="guide" style="font-size: 150%; margin-bottom: 0;">Download our Pricing <span class="line-breaker">Guide&#160;&#160;<img src="assets/img/right-arrow2.webp" width="30" height="30" style="vertical-align: middle;"></span></h1></a>
+				<a id="openFormLink" href="#" class="pricing-guide"><h1 class="guide" style="font-size: 150%; margin-bottom: 0;">View our Pricing <span class="line-breaker">Guide&#160;&#160;<img src="assets/img/right-arrow2.webp" width="30" height="30" style="vertical-align: middle;"></span></h1></a>
 				<h2 style="margin-top: 0; padding-top: 0; margin-bottom: 8vw; margin-left: 10%; font-size: 100%;">For a full budget breakdown of recent projects with real numbers.</h2>
 		</div>
 		</div>
@@ -67,74 +67,135 @@
       <input type="text" id="firstName" name="firstName" placeholder="First Name *" required>
       <input type="text" id="lastName" name="lastName" placeholder="Last Name *" required>
       <input type="email" id="email" name="email" placeholder="Email *" required>
-      <button type="submit">Download Now</button>
+      <button type="submit">View Now</button>
       <h2 style="font-size: 90%; margin-top: 10px; margin-bottom: 0; text-align: center; color: #7a7a7a;">Your information is 100% safe. We hate spam too.</h2>
     </form>
   </div>
 
 
 <script>
-// Fade in videos
-const rowToFadeInUpOnScroll = document.querySelectorAll(".test-row1");
-if (rowToFadeInUpOnScroll) {
-  window.addEventListener("scroll", function(event) {
-    rowToFadeInUpOnScroll.forEach(function(element) {
-      if (window.scrollY >= (element.offsetTop - window.innerHeight)) {
-        element.classList.add("fade-in-up-test");
-      } else {
-        element.classList.remove("fade-in-up-test");
-      }
-    });
-  });
-}
-
-// *************Popup Form***************
-   // Open form when link is clicked
-    document.getElementById("openFormLink").addEventListener("click", function(event) {
-      event.preventDefault();
-      document.getElementById("popupOverlay").style.display = "block";
-      document.getElementById("popupForm").style.display = "block";
-    });
-
-    // Close form when the 'X' is clicked
-    document.getElementById("closeForm").addEventListener("click", function() {
-      document.getElementById("popupOverlay").style.display = "none";
-      document.getElementById("popupForm").style.display = "none";
-    });
-
-    // Close form when clicking outside the form
-    document.getElementById("popupOverlay").addEventListener("click", function() {
-      document.getElementById("popupOverlay").style.display = "none";
-      document.getElementById("popupForm").style.display = "none";
-    });
-
-    // Submit form data to Google Forms
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-      event.preventDefault();
-
-      const firstName = document.getElementById("firstName").value;
-      const lastName = document.getElementById("lastName").value;
-      const email = document.getElementById("email").value;
-
-      const formData = new FormData();
-      formData.append("entry.485437459", firstName);
-      formData.append("entry.262880985", lastName);
-      formData.append("emailAddress", email);
-
-      fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSeGmNRgcDK5lrQxltinfvbb-4HD8kiZFLt6h84x6iev-h-aHw/formResponse", {
-        method: "POST",
-        mode: "no-cors",
-        body: formData
-      })
-      .then(response => {
-        alert("Awesome! We'll send you an email with a link to download our Pricing Guide. Check your inbox soon!");
-        // Close the form
-        document.getElementById("popupOverlay").style.display = "none";
-        document.getElementById("popupForm").style.display = "none";
-      })
-      .catch(error => {
-        alert("There was an error submitting the form.");
-        console.error("Error:", error);
+// Ensure DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Fade in videos (unchanged)
+  const rowToFadeInUpOnScroll = document.querySelectorAll(".test-row1");
+  if (rowToFadeInUpOnScroll) {
+    window.addEventListener("scroll", function(event) {
+      rowToFadeInUpOnScroll.forEach(function(element) {
+        if (window.scrollY >= (element.offsetTop - window.innerHeight)) {
+          element.classList.add("fade-in-up-test");
+        } else {
+          element.classList.remove("fade-in-up-test");
+        }
       });
     });
+  }
+
+  // *************Popup Form***************
+  const openFormLink = document.getElementById("openFormLink");
+  const popupOverlay = document.getElementById("popupOverlay");
+  const popupForm = document.getElementById("popupForm");
+  const closeForm = document.getElementById("closeForm");
+
+  // Debug: Log if elements are found
+  if (!openFormLink) console.error("Error: openFormLink not found");
+  if (!popupOverlay) console.error("Error: popupOverlay not found");
+  if (!popupForm) console.error("Error: popupForm not found");
+  if (!closeForm) console.error("Error: closeForm not found");
+
+  // Open form when link is clicked
+  if (openFormLink) {
+    openFormLink.addEventListener("click", function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      console.log("openFormLink clicked");
+      if (popupOverlay && popupForm) {
+        popupOverlay.style.display = "block";
+        popupForm.style.display = "block";
+      } else {
+        console.error("Cannot show popup: overlay or form element missing");
+      }
+    });
+  }
+
+  // Close form when the 'X' is clicked
+  if (closeForm) {
+    closeForm.addEventListener("click", function(event) {
+      event.preventDefault();
+      console.log("closeForm clicked");
+      if (popupOverlay && popupForm) {
+        popupOverlay.style.display = "none";
+        popupForm.style.display = "none";
+      }
+    });
+  }
+
+  // Close form when clicking outside the form
+  if (popupOverlay) {
+    popupOverlay.addEventListener("click", function(event) {
+      event.preventDefault();
+      console.log("popupOverlay clicked");
+      if (popupOverlay && popupForm) {
+        popupOverlay.style.display = "none";
+        popupForm.style.display = "none";
+      }
+    });
+  }
+
+  // Submit form data to Google Apps Script
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyd9mKmzBZut4jrdUR401ORx3JJV3GZiONsKNq4EYOUjmG9FmbVe3pGs-cbUg4TJGf71w/exec';
+  const form = document.getElementById("contactForm");
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      console.log("Form submitted");
+
+      // Show spinner and disable button
+      const submitButton = form.querySelector('button[type="submit"]');
+      const buttonText = submitButton.textContent;
+      submitButton.innerHTML = '<span class="spinner" style="display: inline-block; border: 4px solid #f3f3f3; border-top: 4px solid #3498db; border-radius: 50%; width: 20px; height: 20px; animation: spin 1s linear infinite;"></span>';
+      submitButton.disabled = true;
+
+      const formData = new FormData(form);
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then(response => response.json())
+        .then(data => {
+          // Reset button
+          submitButton.innerHTML = buttonText;
+          submitButton.disabled = false;
+
+          if (data.result === 'success') {
+            if (typeof swal !== 'undefined') {
+              swal('Success', 'Form submitted! You\'ll receive an email with the pricing guide soon.', 'success');
+            } else {
+              alert('Submitted! Check your email in just a moment for the Pricing Guide.');
+            }
+            form.reset();
+            if (popupOverlay && popupForm) {
+              popupOverlay.style.display = "none";
+              popupForm.style.display = "none";
+            }
+          } else {
+            if (typeof swal !== 'undefined') {
+              swal('Error', 'Something went wrong. Please try again!', 'error');
+            } else {
+              alert('Something went wrong. Please try again!');
+            }
+          }
+        })
+        .catch(error => {
+          // Reset button on error
+          submitButton.innerHTML = buttonText;
+          submitButton.disabled = false;
+          console.error('Form submission error:', error);
+          if (typeof swal !== 'undefined') {
+            swal('Error', 'Something went wrong. Please try again!', 'error');
+          } else {
+            alert('Something went wrong. Please try again!');
+          }
+        });
+    });
+  } else {
+    console.error("Error: contactForm not found");
+  }
+});
 </script>
